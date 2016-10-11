@@ -1,19 +1,22 @@
 import re
 
-#Not cleaning text at all, but noting that new lines, tabs, and carriage returns may change some results.
+#Removing punctuation other than - and '. Also removing \n from end of each sentence in test set.
 
 
 #Open files and read in data
 engText = open('HW2english.txt', 'r')
 engTextString = engText.read()
+engTextString = re.sub('[\"\\.!(),?;:\\[\\]{}@#$%^&*+=\\\\\\/<>«»_|]', '', engTextString)
 engDict = {}
 
 frText = open('HW2french.txt', 'r')
 frTextString = frText.read()
+frTextString = re.sub('[\"\\.!(),?;:\\[\\]{}@#$%^&*+=\\\\\\/<>«»_|]', '', frTextString)
 frDict = {}
 
 gerText = open('HW2german.txt', 'r')
 gerTextString = gerText.read()
+gerTextString = re.sub('[\"\\.!(),?;:\\[\\]{}@#$%^&*+=\\\\\\/<>«»_|]', '', gerTextString)
 gerDict = {}
 
 #get list of unique characters and their frequency
@@ -102,6 +105,7 @@ testStrings = testFile.readlines()
 for line in testStrings:
 	#print(line)
 	line = re.sub('^[\\d]+\\.\\s', '', line)
+	line = re.sub('[\"\\.!(),?;:\\[\\]{}@#$%^&*+=\\\\\\/<>«»_|\n]', '', line)
 	#print(line)
 	outputVal  = str(count) + '. '
 	count += 1
@@ -123,13 +127,12 @@ for line in testStrings:
 	maxProb = max(engProb, frProb, gerProb)
 
 	if engProb == maxProb:
-		outputVal = outputVal + 'EN &'
-	if frProb == maxProb:
-		outputVal = outputVal + 'FR &'
-	if gerProb == maxProb:
-		outputVal = outputVal + 'GR'
+		outputVal = outputVal + 'EN\n'
+	elif frProb == maxProb:
+		outputVal = outputVal + 'FR\n'
+	else:
+		outputVal = outputVal + 'GR\n'
 	
-	outputVal = outputVal + '\n'
 	outputFile.write(outputVal)
 	engProb = 1
 	frProb = 1

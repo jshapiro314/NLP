@@ -10,17 +10,17 @@ import re
 #Open files, read in data, remove punctuation not including - or '
 engText = open('HW2english.txt', 'r')
 engTextString = engText.read()
-engTextString = re.sub('[\"\\.!(),?;:\\[\\]{}@#$%^&*+=\\\\\\/<>]', '', engTextString)
+engTextString = re.sub('[\"\\.!(),?;:\\[\\]{}@#$%^&*+=\\\\\\/<>«»]', '', engTextString)
 engDict = {}
 
 frText = open('HW2french.txt', 'r')
 frTextString = frText.read()
-frTextString = re.sub('[\"\\.!(),?;:\\[\\]{}@#$%^&*+=\\\\\\/<>]', '', frTextString)
+frTextString = re.sub('[\"\\.!(),?;:\\[\\]{}@#$%^&*+=\\\\\\/<>«»]', '', frTextString)
 frDict = {}
 
 gerText = open('HW2german.txt', 'r')
 gerTextString = gerText.read()
-gerTextString = re.sub('[\"\\.!(),?;:\\[\\]{}@#$%^&*+=\\\\\\/<>]', '', gerTextString)
+gerTextString = re.sub('[\"\\.!(),?;:\\[\\]{}@#$%^&*+=\\\\\\/<>«»]', '', gerTextString)
 gerDict = {}
 
 #tokenize on spaces
@@ -134,7 +134,7 @@ for line in testStrings:
 	#remove number from front of line
 	line = re.sub('^[\\d]+\\.\\s', '', line)
 	#remove same punctuation as in training data
-	line = re.sub('[\"\\.!(),?;:\\[\\]{}@#$%^&*+=\\\\\\/<>]', '', line)
+	line = re.sub('[\"\\.!(),?;:\\[\\]{}@#$%^&*+=\\\\\\/<>«»]', '', line)
 	#tokenize
 	lineTokens = re.split('\\s', line)
 	#print(line)
