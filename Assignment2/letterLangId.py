@@ -1,6 +1,8 @@
 import re
+from calculatePerplexity import calcPerplexity
 
-#Removing punctuation other than - and '. Also removing \n from end of each sentence in test set.
+#Removing punctuation other than - and '. Also removing \n from end of each sentence in test set. Not changing uppercase letters to lowercase
+#I am not using the start or end of sentences as tokens
 
 
 #Open files and read in data
@@ -102,6 +104,9 @@ count = 1
 outputVal = ""
 
 testStrings = testFile.readlines()
+
+#used for calculating perplexity
+testData = []
 for line in testStrings:
 	#print(line)
 	line = re.sub('^[\\d]+\\.\\s', '', line)
@@ -110,6 +115,7 @@ for line in testStrings:
 	outputVal  = str(count) + '. '
 	count += 1
 	for i in range(0,len(line)-1):
+		testData.append(line[i])
 		if line[i] in engModel.keys() and line[i+1] in engModel.keys():
 			engProb *= engModel[line[i]][line[i+1]]
 		else:
@@ -123,7 +129,7 @@ for line in testStrings:
 			gerProb *= gerModel[line[i]][line[i+1]]
 		else:
 			gerProb = 0
-
+	testData.append(line[len(line)-1])
 	maxProb = max(engProb, frProb, gerProb)
 
 	if engProb == maxProb:
@@ -140,6 +146,13 @@ for line in testStrings:
 	maxProb = 0
 	outputVal = ""
 
+#output perplexity
+print("Eng perplexity:")
+print(calcPerplexity(engModel, testData))
+print("Fr perplexity:")
+print(calcPerplexity(frModel, testData))
+print("Ger perplexity:")
+print(calcPerplexity(gerModel, testData))
 
 
 

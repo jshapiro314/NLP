@@ -4,6 +4,10 @@ from calculatePerplexity import calcPerplexity
 #Removing some punctuation (not including - or ') and splitting words on whitespace. Not changing uppercase letters to lowercase
 #I am not using the start or end of sentences as tokens
 
+#Used the following link for good turing smoothing guidance: http://rstudio-pubs-static.s3.amazonaws.com/165358_78fd356d6e124331bd66981c51f7ad7c.html
+#I am only using good turing smoothing to modify my N0 though, because I don't want to run into the issue of getting counts of 0 when N(c+1) = 0.
+#I am choosing not to normalize my probabilities.
+
 
 #Open files, read in data, remove punctuation not including - or '
 engText = open('HW2english.txt', 'r')
@@ -64,35 +68,26 @@ for c in gerTokens:
 		gerDict[c] += 1
 #print(gerDict.keys())
 
-#Add the number of tokens to the frequency of each token (part of add 1 smoothing)
-for key in engDict.keys():
-	engDict[key] += len(engDict.keys())
+#By here we have a dictionary for each language that includes tokens and frequencies.
 
-for key in frDict.keys():
-	frDict[key] += len(frDict.keys())
-
-for key in gerDict.keys():
-	gerDict[key] += len(gerDict.keys())
-
-
-#build dictionary of dictionary of unique words x unique words & set initial value to 1 (for add 1 smoothing)
+#build dictionary of dictionary of unique words x unique words & set initial value to 0
 engModel = {}
 for x in engDict.keys():
 	engModel[x] = {}
 	for y in engDict.keys():
-		engModel[x][y] = 1
+		engModel[x][y] = 0
 
 frModel = {}
 for x in frDict.keys():
 	frModel[x] = {}
 	for y in frDict.keys():
-		frModel[x][y] = 1
+		frModel[x][y] = 0
 
 gerModel = {}
 for x in gerDict.keys():
 	gerModel[x] = {}
 	for y in gerDict.keys():
-		gerModel[x][y] = 1
+		gerModel[x][y] = 0
 
 #print(engModel)
 
@@ -109,18 +104,72 @@ for i in range(0,len(gerTokens)-1):
 #print(engModel['t']['h'])
 #print(engDict['t'])
 
-#divide each row by frequency of each word (includes number of tokens as well)
+#By here we have a table of bigrams and the frequencies of the bigrams for each language
+#It's time to calculate the new counts for our 0 occurence bigrams.
+
+engN0 = 0
+engN1 = 0
+engN = 0
+
+frN0 = 0
+frN1 = 0
+frN = 0
+
+gerN0 = 0
+gerN1 = 0
+gerN = 0
+
+for x in engDict.keys():
+	for y in engDict.keys():
+		engN += engModel[x][y]
+		if engModel[x][y] == 0:
+			engN0 += 1
+		elif engModel[x][y] == 1:
+			engN1 += 1
+
+for x in frDict.keys():
+	for y in frDict.keys():
+		frN += frModel[x][y]
+		if frModel[x][y] == 0:
+			frN0 += 1
+		elif frModel[x][y] == 1:
+			frN1 += 1
+
+for x in gerDict.keys():
+	for y in gerDict.keys():
+		gerN += gerModel[x][y]
+		if gerModel[x][y] == 0:
+			gerN0 += 1
+		elif gerModel[x][y] == 1:
+			gerN1 += 1
+
+eng0Prob = engN1 / (engN0 * engN)
+fr0Prob = frN1 / (frN0 * frN)
+ger0Prob = gerN1 / (gerN0 * gerN)
+
+
+#divide each row by frequency of each word or if value == 0, sub in with probability generated above
 for x in engDict.keys():
 	for y in engModel[x].keys():
-		engModel[x][y] = engModel[x][y] / engDict[x]
+		if engModel[x][y] == 0:
+			engModel[x][y] = eng0Prob
+		else:
+			engModel[x][y] = engModel[x][y] / engDict[x]
+
 
 for x in frDict.keys():
 	for y in frModel[x].keys():
-		frModel[x][y] = frModel[x][y] / frDict[x]
+		if frModel[x][y] == 0:
+			frModel[x][y] = fr0Prob
+		else:
+			frModel[x][y] = frModel[x][y] / frDict[x]
 
 for x in gerDict.keys():
 	for y in gerModel[x].keys():
-		gerModel[x][y] = gerModel[x][y] / gerDict[x]
+		if gerModel[x][y] == 0:
+			gerModel[x][y] = ger0Prob
+		else:
+			gerModel[x][y] = gerModel[x][y] / gerDict[x]
 
 #print(engModel['t']['h'])
 #I've brought lots of wine
@@ -132,7 +181,7 @@ for x in gerDict.keys():
 
 #calculate probabilities of each sentence in test data and select max for guessed language (choose the first language if tie)
 testFile = open('LangID.test.txt', 'r')
-outputFile = open('BigramWordLangId-AO.out', 'w')
+outputFile = open('BigramWordLangId-GT.out', 'w')
 outputFile.write("ID LANG\n")
 engProb = 1
 frProb = 1
