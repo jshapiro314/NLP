@@ -1,5 +1,5 @@
 import re
-from calculatePerplexity import calcPerplexity
+from calculatePerplexity import calcPerplexityBigram
 
 #Removing some punctuation (not including - or ') and splitting words on whitespace. Not changing uppercase letters to lowercase
 #I am not using the start or end of sentences as tokens

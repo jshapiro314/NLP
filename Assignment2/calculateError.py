@@ -30,5 +30,6 @@ def calculatePercentage ( textFile ):
 calculatePercentage("BigramLetterLangId.out")
 calculatePercentage("BigramWordLangId-AO.out")
 calculatePercentage("BigramWordLangId-GT.out")
+calculatePercentage("TrigramWordLangId-KBO.out")
 
 
