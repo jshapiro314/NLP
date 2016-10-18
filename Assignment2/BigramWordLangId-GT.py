@@ -232,8 +232,8 @@ for line in testStrings:
 
 #output perplexity
 print("Eng perplexity:")
-print(calcPerplexity(engModel, testData))
+print(calcPerplexityBigram(engModel, testData))
 print("Fr perplexity:")
-print(calcPerplexity(frModel, testData))
+print(calcPerplexityBigram(frModel, testData))
 print("Ger perplexity:")
-print(calcPerplexity(gerModel, testData))
+print(calcPerplexityBigram(gerModel, testData))
