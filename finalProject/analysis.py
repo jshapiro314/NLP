@@ -75,39 +75,51 @@ sparseRandAutoModel = featureSelection.sparseRandProjTrain(trainData,"auto")
 
 #Reduce features based on models created above
 pcaTrainData10 = featureSelection.featureReduce(pca10Model,trainData)
-pcaTestData10 = featureSelection.featureReduce(pca10Model,testData)
+pcaValidationData10 = featureSelection.featureReduce(pca10Model,ValidationData)
 pcaTrainData25 = featureSelection.featureReduce(pca25Model,trainData)
-pcaTestData25 = featureSelection.featureReduce(pca25Model,testData)
+pcaValidationData25 = featureSelection.featureReduce(pca25Model,ValidationData)
 pcaTrainData50 = featureSelection.featureReduce(pca50Model,trainData)
-pcaTestData50 = featureSelection.featureReduce(pca50Model,testData)
+pcaValidationData50 = featureSelection.featureReduce(pca50Model,ValidationData)
 
 agglomTrainData10 = featureSelection.featureReduce(agglom10Model,trainData)
-agglomTestData10 = featureSelection.featureReduce(agglom10Model,testData)
+agglomValidationData10 = featureSelection.featureReduce(agglom10Model,ValidationData)
 agglomTrainData25 = featureSelection.featureReduce(agglom25Model,trainData)
-agglomTestData25 = featureSelection.featureReduce(agglom25Model,testData)
+agglomValidationData25 = featureSelection.featureReduce(agglom25Model,ValidationData)
 agglomTrainData50 = featureSelection.featureReduce(agglom50Model,trainData)
-agglomTestData50 = featureSelection.featureReduce(agglom50Model,testData)
+agglomValidationData50 = featureSelection.featureReduce(agglom50Model,ValidationData)
 
 gaussRandTrainData10 = featureSelection.featureReduce(gaussRand10Model,trainData)
-gaussRandTestData10 = featureSelection.featureReduce(gaussRand10Model,testData)
+gaussRandValidationData10 = featureSelection.featureReduce(gaussRand10Model,ValidationData)
 gaussRandTrainData25 = featureSelection.featureReduce(gaussRand25Model,trainData)
-gaussRandTestData25 = featureSelection.featureReduce(gaussRand25Model,testData)
+gaussRandValidationData25 = featureSelection.featureReduce(gaussRand25Model,ValidationData)
 gaussRandTrainData50 = featureSelection.featureReduce(gaussRand50Model,trainData)
-gaussRandTestData50 = featureSelection.featureReduce(gaussRand50Model,testData)
+gaussRandValidationData50 = featureSelection.featureReduce(gaussRand50Model,ValidationData)
 gaussRandTrainDataAuto = featureSelection.featureReduce(gaussRandAutoModel,trainData)
-gaussRandTestDataAuto = featureSelection.featureReduce(gaussRandAutoModel,testData)
+gaussRandValidationDataAuto = featureSelection.featureReduce(gaussRandAutoModel,ValidationData)
 
 sparseRandTrainData10 = featureSelection.featureReduce(sparseRand10Model,trainData)
-sparseRandTestData10 = featureSelection.featureReduce(sparseRand10Model,testData)
+sparseRandValidationData10 = featureSelection.featureReduce(sparseRand10Model,ValidationData)
 sparseRandTrainData25 = featureSelection.featureReduce(sparseRand25Model,trainData)
-sparseRandTestData25 = featureSelection.featureReduce(sparseRand25Model,testData)
+sparseRandValidationData25 = featureSelection.featureReduce(sparseRand25Model,ValidationData)
 sparseRandTrainData50 = featureSelection.featureReduce(sparseRand50Model,trainData)
-sparseRandTestData50 = featureSelection.featureReduce(sparseRand50Model,testData)
+sparseRandValidationData50 = featureSelection.featureReduce(sparseRand50Model,ValidationData)
 sparseRandTrainDataAuto = featureSelection.featureReduce(sparseRandAutoModel,trainData)
-sparseRandTestDataAuto = featureSelection.featureReduce(sparseRandAutoModel,testData)
+sparseRandValidationDataAuto = featureSelection.featureReduce(sparseRandAutoModel,ValidationData)
 
 
 
 ############################################
-###Run Classifiers##########################
+###Run Classifiers on Validation############
+############################################
+
+#run classifiers with varying parameters using train & validation data from feature selection sections
+svmTrainAndClassify(pcaTrainData10, trainLabels, pcaValidationData10, ValidationLabels, cVal, kernelVal, degreeVal)
+
+
+
+
+
+
+############################################
+###Run Best Classifier on Test##############
 ############################################
