@@ -551,7 +551,79 @@ print "Sparse Random Tree auto: %0.5f%" % (accuracy)
 
 
 
+#For Naive Bayes:
+#multinomial & guassian
 
+#Multinomial
+print "Multinomial Naive Bayes   ##########################"
+
+accuracy = multNBTrainAndClassify(pcaTrainData10, trainLabels, pcaValidationData10, ValidationLabels)
+print "PCA 10: %0.5f%" % (accuracy)
+accuracy = multNBTrainAndClassify(pcaTrainData25, trainLabels, pcaValidationData25, ValidationLabels)
+print "PCA 25: %0.5f%" % (accuracy)
+accuracy = multNBTrainAndClassify(pcaTrainData50, trainLabels, pcaValidationData50, ValidationLabels)
+print "PCA 50: %0.5f%" % (accuracy)
+
+accuracy = multNBTrainAndClassify(agglomTrainData10, trainLabels, agglomValidationData10, ValidationLabels)
+print "Feature Agglomeration 10: %0.5f%" % (accuracy)
+accuracy = multNBTrainAndClassify(agglomTrainData25, trainLabels, agglomValidationData25, ValidationLabels)
+print "Feature Agglomeration 25: %0.5f%" % (accuracy)
+accuracy = multNBTrainAndClassify(agglomTrainData50, trainLabels, agglomValidationData50, ValidationLabels)
+print "Feature Agglomeration 50: %0.5f%" % (accuracy)
+
+accuracy = multNBTrainAndClassify(gaussRandTrainData10, trainLabels, gaussRandValidationData10, ValidationLabels)
+print "Gaussian Random Tree 10: %0.5f%" % (accuracy)
+accuracy = multNBTrainAndClassify(gaussRandTrainData25, trainLabels, gaussRandValidationData25, ValidationLabels)
+print "Gaussian Random Tree 25: %0.5f%" % (accuracy)
+accuracy = multNBTrainAndClassify(gaussRandTrainData50, trainLabels, gaussRandValidationData50, ValidationLabels)
+print "Gaussian Random Tree 50: %0.5f%" % (accuracy)
+accuracy = multNBTrainAndClassify(gaussRandTrainDataAuto, trainLabels, gaussRandValidationDataAuto, ValidationLabels)
+print "Gaussian Random Tree auto: %0.5f%" % (accuracy)
+
+accuracy = multNBTrainAndClassify(sparseRandTrainData10, trainLabels, sparseRandValidationData10, ValidationLabels)
+print "Sparse Random Tree 10: %0.5f%" % (accuracy)
+accuracy = multNBTrainAndClassify(sparseRandTrainData25, trainLabels, sparseRandValidationData25, ValidationLabels)
+print "Sparse Random Tree 25: %0.5f%" % (accuracy)
+accuracy = multNBTrainAndClassify(sparseRandTrainData50, trainLabels, sparseRandValidationData50, ValidationLabels)
+print "Sparse Random Tree 50: %0.5f%" % (accuracy)
+accuracy = multNBTrainAndClassify(sparseRandTrainDataAuto, trainLabels, sparseRandValidationDataAuto, ValidationLabels)
+print "Sparse Random Tree auto: %0.5f%" % (accuracy)
+
+
+#Gaussian
+print "Gaussian Naive Bayes   #############################"
+
+accuracy = gaussNBTrainAndClassify(pcaTrainData10, trainLabels, pcaValidationData10, ValidationLabels)
+print "PCA 10: %0.5f%" % (accuracy)
+accuracy = gaussNBTrainAndClassify(pcaTrainData25, trainLabels, pcaValidationData25, ValidationLabels)
+print "PCA 25: %0.5f%" % (accuracy)
+accuracy = gaussNBTrainAndClassify(pcaTrainData50, trainLabels, pcaValidationData50, ValidationLabels)
+print "PCA 50: %0.5f%" % (accuracy)
+
+accuracy = gaussNBTrainAndClassify(agglomTrainData10, trainLabels, agglomValidationData10, ValidationLabels)
+print "Feature Agglomeration 10: %0.5f%" % (accuracy)
+accuracy = gaussNBTrainAndClassify(agglomTrainData25, trainLabels, agglomValidationData25, ValidationLabels)
+print "Feature Agglomeration 25: %0.5f%" % (accuracy)
+accuracy = gaussNBTrainAndClassify(agglomTrainData50, trainLabels, agglomValidationData50, ValidationLabels)
+print "Feature Agglomeration 50: %0.5f%" % (accuracy)
+
+accuracy = gaussNBTrainAndClassify(gaussRandTrainData10, trainLabels, gaussRandValidationData10, ValidationLabels)
+print "Gaussian Random Tree 10: %0.5f%" % (accuracy)
+accuracy = gaussNBTrainAndClassify(gaussRandTrainData25, trainLabels, gaussRandValidationData25, ValidationLabels)
+print "Gaussian Random Tree 25: %0.5f%" % (accuracy)
+accuracy = gaussNBTrainAndClassify(gaussRandTrainData50, trainLabels, gaussRandValidationData50, ValidationLabels)
+print "Gaussian Random Tree 50: %0.5f%" % (accuracy)
+accuracy = gaussNBTrainAndClassify(gaussRandTrainDataAuto, trainLabels, gaussRandValidationDataAuto, ValidationLabels)
+print "Gaussian Random Tree auto: %0.5f%" % (accuracy)
+
+accuracy = gaussNBTrainAndClassify(sparseRandTrainData10, trainLabels, sparseRandValidationData10, ValidationLabels)
+print "Sparse Random Tree 10: %0.5f%" % (accuracy)
+accuracy = gaussNBTrainAndClassify(sparseRandTrainData25, trainLabels, sparseRandValidationData25, ValidationLabels)
+print "Sparse Random Tree 25: %0.5f%" % (accuracy)
+accuracy = gaussNBTrainAndClassify(sparseRandTrainData50, trainLabels, sparseRandValidationData50, ValidationLabels)
+print "Sparse Random Tree 50: %0.5f%" % (accuracy)
+accuracy = gaussNBTrainAndClassify(sparseRandTrainDataAuto, trainLabels, sparseRandValidationDataAuto, ValidationLabels)
+print "Sparse Random Tree auto: %0.5f%" % (accuracy)
 
 
 ############################################
