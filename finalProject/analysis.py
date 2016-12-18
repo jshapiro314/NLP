@@ -113,7 +113,441 @@ sparseRandValidationDataAuto = featureSelection.featureReduce(sparseRandAutoMode
 ############################################
 
 #run classifiers with varying parameters using train & validation data from feature selection sections
-svmTrainAndClassify(pcaTrainData10, trainLabels, pcaValidationData10, ValidationLabels, cVal, kernelVal, degreeVal)
+
+#For SVM:
+#cVal can be 0.1,1,10
+#kernelVal can be linear, poly2, poly3, rbf
+
+#linear c=0.1
+print "linear SVM, C=0.1   ################################"
+
+accuracy = svmTrainAndClassify(pcaTrainData10, trainLabels, pcaValidationData10, ValidationLabels, 0.1, "linear", 4)
+print "PCA 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData25, trainLabels, pcaValidationData25, ValidationLabels, 0.1, "linear", 4)
+print "PCA 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData50, trainLabels, pcaValidationData50, ValidationLabels, 0.1, "linear", 4)
+print "PCA 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(agglomTrainData10, trainLabels, agglomValidationData10, ValidationLabels, 0.1, "linear", 4)
+print "Feature Agglomeration 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData25, trainLabels, agglomValidationData25, ValidationLabels, 0.1, "linear", 4)
+print "Feature Agglomeration 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData50, trainLabels, agglomValidationData50, ValidationLabels, 0.1, "linear", 4)
+print "Feature Agglomeration 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(gaussRandTrainData10, trainLabels, gaussRandValidationData10, ValidationLabels, 0.1, "linear", 4)
+print "Gaussian Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData25, trainLabels, gaussRandValidationData25, ValidationLabels, 0.1, "linear", 4)
+print "Gaussian Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData50, trainLabels, gaussRandValidationData50, ValidationLabels, 0.1, "linear", 4)
+print "Gaussian Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainDataAuto, trainLabels, gaussRandValidationDataAuto, ValidationLabels, 0.1, "linear", 4)
+print "Gaussian Random Tree auto: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(sparseRandTrainData10, trainLabels, sparseRandValidationData10, ValidationLabels, 0.1, "linear", 4)
+print "Sparse Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData25, trainLabels, sparseRandValidationData25, ValidationLabels, 0.1, "linear", 4)
+print "Sparse Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData50, trainLabels, sparseRandValidationData50, ValidationLabels, 0.1, "linear", 4)
+print "Sparse Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainDataAuto, trainLabels, sparseRandValidationDataAuto, ValidationLabels, 0.1, "linear", 4)
+print "Sparse Random Tree auto: %0.5f%" % (accuracy)
+
+
+#linear c=1
+print "linear SVM, C=1   ##################################"
+
+accuracy = svmTrainAndClassify(pcaTrainData10, trainLabels, pcaValidationData10, ValidationLabels, 1, "linear", 4)
+print "PCA 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData25, trainLabels, pcaValidationData25, ValidationLabels, 1, "linear", 4)
+print "PCA 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData50, trainLabels, pcaValidationData50, ValidationLabels, 1, "linear", 4)
+print "PCA 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(agglomTrainData10, trainLabels, agglomValidationData10, ValidationLabels, 1, "linear", 4)
+print "Feature Agglomeration 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData25, trainLabels, agglomValidationData25, ValidationLabels, 1, "linear", 4)
+print "Feature Agglomeration 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData50, trainLabels, agglomValidationData50, ValidationLabels, 1, "linear", 4)
+print "Feature Agglomeration 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(gaussRandTrainData10, trainLabels, gaussRandValidationData10, ValidationLabels, 1, "linear", 4)
+print "Gaussian Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData25, trainLabels, gaussRandValidationData25, ValidationLabels, 1, "linear", 4)
+print "Gaussian Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData50, trainLabels, gaussRandValidationData50, ValidationLabels, 1, "linear", 4)
+print "Gaussian Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainDataAuto, trainLabels, gaussRandValidationDataAuto, ValidationLabels, 1, "linear", 4)
+print "Gaussian Random Tree auto: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(sparseRandTrainData10, trainLabels, sparseRandValidationData10, ValidationLabels, 1, "linear", 4)
+print "Sparse Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData25, trainLabels, sparseRandValidationData25, ValidationLabels, 1, "linear", 4)
+print "Sparse Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData50, trainLabels, sparseRandValidationData50, ValidationLabels, 1, "linear", 4)
+print "Sparse Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainDataAuto, trainLabels, sparseRandValidationDataAuto, ValidationLabels, 1, "linear", 4)
+print "Sparse Random Tree auto: %0.5f%" % (accuracy)
+
+
+#linear c=10
+print "linear SVM, C=10   #################################"
+
+accuracy = svmTrainAndClassify(pcaTrainData10, trainLabels, pcaValidationData10, ValidationLabels, 10, "linear", 4)
+print "PCA 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData25, trainLabels, pcaValidationData25, ValidationLabels, 10, "linear", 4)
+print "PCA 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData50, trainLabels, pcaValidationData50, ValidationLabels, 10, "linear", 4)
+print "PCA 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(agglomTrainData10, trainLabels, agglomValidationData10, ValidationLabels, 10, "linear", 4)
+print "Feature Agglomeration 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData25, trainLabels, agglomValidationData25, ValidationLabels, 10, "linear", 4)
+print "Feature Agglomeration 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData50, trainLabels, agglomValidationData50, ValidationLabels, 10, "linear", 4)
+print "Feature Agglomeration 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(gaussRandTrainData10, trainLabels, gaussRandValidationData10, ValidationLabels, 10, "linear", 4)
+print "Gaussian Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData25, trainLabels, gaussRandValidationData25, ValidationLabels, 10, "linear", 4)
+print "Gaussian Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData50, trainLabels, gaussRandValidationData50, ValidationLabels, 10, "linear", 4)
+print "Gaussian Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainDataAuto, trainLabels, gaussRandValidationDataAuto, ValidationLabels, 10, "linear", 4)
+print "Gaussian Random Tree auto: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(sparseRandTrainData10, trainLabels, sparseRandValidationData10, ValidationLabels, 10, "linear", 4)
+print "Sparse Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData25, trainLabels, sparseRandValidationData25, ValidationLabels, 10, "linear", 4)
+print "Sparse Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData50, trainLabels, sparseRandValidationData50, ValidationLabels, 10, "linear", 4)
+print "Sparse Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainDataAuto, trainLabels, sparseRandValidationDataAuto, ValidationLabels, 10, "linear", 4)
+print "Sparse Random Tree auto: %0.5f%" % (accuracy)
+
+
+#Poly 2 c=0.1
+print "Poly 2 SVM, C=0.1   ################################"
+
+accuracy = svmTrainAndClassify(pcaTrainData10, trainLabels, pcaValidationData10, ValidationLabels, 0.1, "poly", 2)
+print "PCA 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData25, trainLabels, pcaValidationData25, ValidationLabels, 0.1, "poly", 2)
+print "PCA 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData50, trainLabels, pcaValidationData50, ValidationLabels, 0.1, "poly", 2)
+print "PCA 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(agglomTrainData10, trainLabels, agglomValidationData10, ValidationLabels, 0.1, "poly", 2)
+print "Feature Agglomeration 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData25, trainLabels, agglomValidationData25, ValidationLabels, 0.1, "poly", 2)
+print "Feature Agglomeration 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData50, trainLabels, agglomValidationData50, ValidationLabels, 0.1, "poly", 2)
+print "Feature Agglomeration 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(gaussRandTrainData10, trainLabels, gaussRandValidationData10, ValidationLabels, 0.1, "poly", 2)
+print "Gaussian Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData25, trainLabels, gaussRandValidationData25, ValidationLabels, 0.1, "poly", 2)
+print "Gaussian Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData50, trainLabels, gaussRandValidationData50, ValidationLabels, 0.1, "poly", 2)
+print "Gaussian Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainDataAuto, trainLabels, gaussRandValidationDataAuto, ValidationLabels, 0.1, "poly", 2)
+print "Gaussian Random Tree auto: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(sparseRandTrainData10, trainLabels, sparseRandValidationData10, ValidationLabels, 0.1, "poly", 2)
+print "Sparse Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData25, trainLabels, sparseRandValidationData25, ValidationLabels, 0.1, "poly", 2)
+print "Sparse Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData50, trainLabels, sparseRandValidationData50, ValidationLabels, 0.1, "poly", 2)
+print "Sparse Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainDataAuto, trainLabels, sparseRandValidationDataAuto, ValidationLabels, 0.1, "poly", 2)
+print "Sparse Random Tree auto: %0.5f%" % (accuracy)
+
+
+#Poly 2 c=1
+print "Poly 2 SVM, C=1   ##################################"
+
+accuracy = svmTrainAndClassify(pcaTrainData10, trainLabels, pcaValidationData10, ValidationLabels, 1, "poly", 2)
+print "PCA 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData25, trainLabels, pcaValidationData25, ValidationLabels, 1, "poly", 2)
+print "PCA 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData50, trainLabels, pcaValidationData50, ValidationLabels, 1, "poly", 2)
+print "PCA 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(agglomTrainData10, trainLabels, agglomValidationData10, ValidationLabels, 1, "poly", 2)
+print "Feature Agglomeration 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData25, trainLabels, agglomValidationData25, ValidationLabels, 1, "poly", 2)
+print "Feature Agglomeration 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData50, trainLabels, agglomValidationData50, ValidationLabels, 1, "poly", 2)
+print "Feature Agglomeration 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(gaussRandTrainData10, trainLabels, gaussRandValidationData10, ValidationLabels, 1, "poly", 2)
+print "Gaussian Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData25, trainLabels, gaussRandValidationData25, ValidationLabels, 1, "poly", 2)
+print "Gaussian Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData50, trainLabels, gaussRandValidationData50, ValidationLabels, 1, "poly", 2)
+print "Gaussian Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainDataAuto, trainLabels, gaussRandValidationDataAuto, ValidationLabels, 1, "poly", 2)
+print "Gaussian Random Tree auto: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(sparseRandTrainData10, trainLabels, sparseRandValidationData10, ValidationLabels, 1, "poly", 2)
+print "Sparse Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData25, trainLabels, sparseRandValidationData25, ValidationLabels, 1, "poly", 2)
+print "Sparse Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData50, trainLabels, sparseRandValidationData50, ValidationLabels, 1, "poly", 2)
+print "Sparse Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainDataAuto, trainLabels, sparseRandValidationDataAuto, ValidationLabels, 1, "poly", 2)
+print "Sparse Random Tree auto: %0.5f%" % (accuracy)
+
+
+#Poly 2 c=10
+print "Poly 2 SVM, C=10   #################################"
+
+accuracy = svmTrainAndClassify(pcaTrainData10, trainLabels, pcaValidationData10, ValidationLabels, 0, "poly", 2)
+print "PCA 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData25, trainLabels, pcaValidationData25, ValidationLabels, 10, "poly", 2)
+print "PCA 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData50, trainLabels, pcaValidationData50, ValidationLabels, 10, "poly", 2)
+print "PCA 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(agglomTrainData10, trainLabels, agglomValidationData10, ValidationLabels, 10, "poly", 2)
+print "Feature Agglomeration 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData25, trainLabels, agglomValidationData25, ValidationLabels, 10, "poly", 2)
+print "Feature Agglomeration 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData50, trainLabels, agglomValidationData50, ValidationLabels, 10, "poly", 2)
+print "Feature Agglomeration 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(gaussRandTrainData10, trainLabels, gaussRandValidationData10, ValidationLabels, 10, "poly", 2)
+print "Gaussian Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData25, trainLabels, gaussRandValidationData25, ValidationLabels, 10, "poly", 2)
+print "Gaussian Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData50, trainLabels, gaussRandValidationData50, ValidationLabels, 10, "poly", 2)
+print "Gaussian Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainDataAuto, trainLabels, gaussRandValidationDataAuto, ValidationLabels, 10, "poly", 2)
+print "Gaussian Random Tree auto: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(sparseRandTrainData10, trainLabels, sparseRandValidationData10, ValidationLabels, 10, "poly", 2)
+print "Sparse Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData25, trainLabels, sparseRandValidationData25, ValidationLabels, 10, "poly", 2)
+print "Sparse Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData50, trainLabels, sparseRandValidationData50, ValidationLabels, 10, "poly", 2)
+print "Sparse Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainDataAuto, trainLabels, sparseRandValidationDataAuto, ValidationLabels, 10, "poly", 2)
+print "Sparse Random Tree auto: %0.5f%" % (accuracy)
+
+
+#Poly 3 c=0.1
+print "Poly 3 SVM, C=0.1   ################################"
+
+accuracy = svmTrainAndClassify(pcaTrainData10, trainLabels, pcaValidationData10, ValidationLabels, 0.1, "poly", 3)
+print "PCA 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData25, trainLabels, pcaValidationData25, ValidationLabels, 0.1, "poly", 3)
+print "PCA 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData50, trainLabels, pcaValidationData50, ValidationLabels, 0.1, "poly", 3)
+print "PCA 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(agglomTrainData10, trainLabels, agglomValidationData10, ValidationLabels, 0.1, "poly", 3)
+print "Feature Agglomeration 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData25, trainLabels, agglomValidationData25, ValidationLabels, 0.1, "poly", 3)
+print "Feature Agglomeration 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData50, trainLabels, agglomValidationData50, ValidationLabels, 0.1, "poly", 3)
+print "Feature Agglomeration 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(gaussRandTrainData10, trainLabels, gaussRandValidationData10, ValidationLabels, 0.1, "poly", 3)
+print "Gaussian Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData25, trainLabels, gaussRandValidationData25, ValidationLabels, 0.1, "poly", 3)
+print "Gaussian Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData50, trainLabels, gaussRandValidationData50, ValidationLabels, 0.1, "poly", 3)
+print "Gaussian Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainDataAuto, trainLabels, gaussRandValidationDataAuto, ValidationLabels, 0.1, "poly", 3)
+print "Gaussian Random Tree auto: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(sparseRandTrainData10, trainLabels, sparseRandValidationData10, ValidationLabels, 0.1, "poly", 3)
+print "Sparse Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData25, trainLabels, sparseRandValidationData25, ValidationLabels, 0.1, "poly", 3)
+print "Sparse Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData50, trainLabels, sparseRandValidationData50, ValidationLabels, 0.1, "poly", 3)
+print "Sparse Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainDataAuto, trainLabels, sparseRandValidationDataAuto, ValidationLabels, 0.1, "poly", 3)
+print "Sparse Random Tree auto: %0.5f%" % (accuracy)
+
+
+#Poly 3 c=1
+print "Poly 3 SVM, C=1   ##################################"
+
+accuracy = svmTrainAndClassify(pcaTrainData10, trainLabels, pcaValidationData10, ValidationLabels, 1, "poly", 3)
+print "PCA 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData25, trainLabels, pcaValidationData25, ValidationLabels, 1, "poly", 3)
+print "PCA 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData50, trainLabels, pcaValidationData50, ValidationLabels, 1, "poly", 3)
+print "PCA 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(agglomTrainData10, trainLabels, agglomValidationData10, ValidationLabels, 1, "poly", 3)
+print "Feature Agglomeration 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData25, trainLabels, agglomValidationData25, ValidationLabels, 1, "poly", 3)
+print "Feature Agglomeration 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData50, trainLabels, agglomValidationData50, ValidationLabels, 1, "poly", 3)
+print "Feature Agglomeration 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(gaussRandTrainData10, trainLabels, gaussRandValidationData10, ValidationLabels, 1, "poly", 3)
+print "Gaussian Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData25, trainLabels, gaussRandValidationData25, ValidationLabels, 1, "poly", 3)
+print "Gaussian Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData50, trainLabels, gaussRandValidationData50, ValidationLabels, 1, "poly", 3)
+print "Gaussian Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainDataAuto, trainLabels, gaussRandValidationDataAuto, ValidationLabels, 1, "poly", 3)
+print "Gaussian Random Tree auto: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(sparseRandTrainData10, trainLabels, sparseRandValidationData10, ValidationLabels, 1, "poly", 3)
+print "Sparse Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData25, trainLabels, sparseRandValidationData25, ValidationLabels, 1, "poly", 3)
+print "Sparse Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData50, trainLabels, sparseRandValidationData50, ValidationLabels, 1, "poly", 3)
+print "Sparse Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainDataAuto, trainLabels, sparseRandValidationDataAuto, ValidationLabels, 1, "poly", 3)
+print "Sparse Random Tree auto: %0.5f%" % (accuracy)
+
+
+#Poly 3 c=10
+print "Poly 3 SVM, C=10   #################################"
+
+accuracy = svmTrainAndClassify(pcaTrainData10, trainLabels, pcaValidationData10, ValidationLabels, 10, "poly", 3)
+print "PCA 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData25, trainLabels, pcaValidationData25, ValidationLabels, 10, "poly", 3)
+print "PCA 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData50, trainLabels, pcaValidationData50, ValidationLabels, 10, "poly", 3)
+print "PCA 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(agglomTrainData10, trainLabels, agglomValidationData10, ValidationLabels, 10, "poly", 3)
+print "Feature Agglomeration 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData25, trainLabels, agglomValidationData25, ValidationLabels, 10, "poly", 3)
+print "Feature Agglomeration 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData50, trainLabels, agglomValidationData50, ValidationLabels, 10, "poly", 3)
+print "Feature Agglomeration 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(gaussRandTrainData10, trainLabels, gaussRandValidationData10, ValidationLabels, 10, "poly", 3)
+print "Gaussian Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData25, trainLabels, gaussRandValidationData25, ValidationLabels, 10, "poly", 3)
+print "Gaussian Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData50, trainLabels, gaussRandValidationData50, ValidationLabels, 10, "poly", 3)
+print "Gaussian Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainDataAuto, trainLabels, gaussRandValidationDataAuto, ValidationLabels, 10, "poly", 3)
+print "Gaussian Random Tree auto: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(sparseRandTrainData10, trainLabels, sparseRandValidationData10, ValidationLabels, 10, "poly", 3)
+print "Sparse Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData25, trainLabels, sparseRandValidationData25, ValidationLabels, 10, "poly", 3)
+print "Sparse Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData50, trainLabels, sparseRandValidationData50, ValidationLabels, 10, "poly", 3)
+print "Sparse Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainDataAuto, trainLabels, sparseRandValidationDataAuto, ValidationLabels, 10, "poly", 3)
+print "Sparse Random Tree auto: %0.5f%" % (accuracy)
+
+
+#Rbf c=0.1
+print "Rbf SVM, C=0.1   ###################################"
+
+accuracy = svmTrainAndClassify(pcaTrainData10, trainLabels, pcaValidationData10, ValidationLabels, 0.1, "rbf", 4)
+print "PCA 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData25, trainLabels, pcaValidationData25, ValidationLabels, 0.1, "rbf", 4)
+print "PCA 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData50, trainLabels, pcaValidationData50, ValidationLabels, 0.1, "rbf", 4)
+print "PCA 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(agglomTrainData10, trainLabels, agglomValidationData10, ValidationLabels, 0.1, "rbf", 4)
+print "Feature Agglomeration 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData25, trainLabels, agglomValidationData25, ValidationLabels, 0.1, "rbf", 4)
+print "Feature Agglomeration 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData50, trainLabels, agglomValidationData50, ValidationLabels, 0.1, "rbf", 4)
+print "Feature Agglomeration 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(gaussRandTrainData10, trainLabels, gaussRandValidationData10, ValidationLabels, 0.1, "rbf", 4)
+print "Gaussian Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData25, trainLabels, gaussRandValidationData25, ValidationLabels, 0.1, "rbf", 4)
+print "Gaussian Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData50, trainLabels, gaussRandValidationData50, ValidationLabels, 0.1, "rbf", 4)
+print "Gaussian Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainDataAuto, trainLabels, gaussRandValidationDataAuto, ValidationLabels, 0.1, "rbf", 4)
+print "Gaussian Random Tree auto: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(sparseRandTrainData10, trainLabels, sparseRandValidationData10, ValidationLabels, 0.1, "rbf", 4)
+print "Sparse Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData25, trainLabels, sparseRandValidationData25, ValidationLabels, 0.1, "rbf", 4)
+print "Sparse Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData50, trainLabels, sparseRandValidationData50, ValidationLabels, 0.1, "rbf", 4)
+print "Sparse Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainDataAuto, trainLabels, sparseRandValidationDataAuto, ValidationLabels, 0.1, "rbf", 4)
+print "Sparse Random Tree auto: %0.5f%" % (accuracy)
+
+
+#Rbf c=1
+print "Rbf SVM, C=1   #####################################"
+
+accuracy = svmTrainAndClassify(pcaTrainData10, trainLabels, pcaValidationData10, ValidationLabels, 1, "rbf", 4)
+print "PCA 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData25, trainLabels, pcaValidationData25, ValidationLabels, 1, "rbf", 4)
+print "PCA 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData50, trainLabels, pcaValidationData50, ValidationLabels, 1, "rbf", 4)
+print "PCA 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(agglomTrainData10, trainLabels, agglomValidationData10, ValidationLabels, 1, "rbf", 4)
+print "Feature Agglomeration 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData25, trainLabels, agglomValidationData25, ValidationLabels, 1, "rbf", 4)
+print "Feature Agglomeration 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData50, trainLabels, agglomValidationData50, ValidationLabels, 1, "rbf", 4)
+print "Feature Agglomeration 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(gaussRandTrainData10, trainLabels, gaussRandValidationData10, ValidationLabels, 1, "rbf", 4)
+print "Gaussian Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData25, trainLabels, gaussRandValidationData25, ValidationLabels, 1, "rbf", 4)
+print "Gaussian Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData50, trainLabels, gaussRandValidationData50, ValidationLabels, 1, "rbf", 4)
+print "Gaussian Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainDataAuto, trainLabels, gaussRandValidationDataAuto, ValidationLabels, 1, "rbf", 4)
+print "Gaussian Random Tree auto: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(sparseRandTrainData10, trainLabels, sparseRandValidationData10, ValidationLabels, 1, "rbf", 4)
+print "Sparse Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData25, trainLabels, sparseRandValidationData25, ValidationLabels, 1, "rbf", 4)
+print "Sparse Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData50, trainLabels, sparseRandValidationData50, ValidationLabels, 1, "rbf", 4)
+print "Sparse Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainDataAuto, trainLabels, sparseRandValidationDataAuto, ValidationLabels, 1, "rbf", 4)
+print "Sparse Random Tree auto: %0.5f%" % (accuracy)
+
+
+#Rbf c=10
+print "Rbf SVM, C=10   ####################################"
+
+accuracy = svmTrainAndClassify(pcaTrainData10, trainLabels, pcaValidationData10, ValidationLabels, 10, "rbf", 4)
+print "PCA 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData25, trainLabels, pcaValidationData25, ValidationLabels, 10, "rbf", 4)
+print "PCA 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(pcaTrainData50, trainLabels, pcaValidationData50, ValidationLabels, 10, "rbf", 4)
+print "PCA 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(agglomTrainData10, trainLabels, agglomValidationData10, ValidationLabels, 10, "rbf", 4)
+print "Feature Agglomeration 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData25, trainLabels, agglomValidationData25, ValidationLabels, 10, "rbf", 4)
+print "Feature Agglomeration 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(agglomTrainData50, trainLabels, agglomValidationData50, ValidationLabels, 10, "rbf", 4)
+print "Feature Agglomeration 50: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(gaussRandTrainData10, trainLabels, gaussRandValidationData10, ValidationLabels, 10, "rbf", 4)
+print "Gaussian Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData25, trainLabels, gaussRandValidationData25, ValidationLabels, 10, "rbf", 4)
+print "Gaussian Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainData50, trainLabels, gaussRandValidationData50, ValidationLabels, 10, "rbf", 4)
+print "Gaussian Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(gaussRandTrainDataAuto, trainLabels, gaussRandValidationDataAuto, ValidationLabels, 10, "rbf", 4)
+print "Gaussian Random Tree auto: %0.5f%" % (accuracy)
+
+accuracy = svmTrainAndClassify(sparseRandTrainData10, trainLabels, sparseRandValidationData10, ValidationLabels, 10, "rbf", 4)
+print "Sparse Random Tree 10: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData25, trainLabels, sparseRandValidationData25, ValidationLabels, 10, "rbf", 4)
+print "Sparse Random Tree 25: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainData50, trainLabels, sparseRandValidationData50, ValidationLabels, 10, "rbf", 4)
+print "Sparse Random Tree 50: %0.5f%" % (accuracy)
+accuracy = svmTrainAndClassify(sparseRandTrainDataAuto, trainLabels, sparseRandValidationDataAuto, ValidationLabels, 10, "rbf", 4)
+print "Sparse Random Tree auto: %0.5f%" % (accuracy)
 
 
 
