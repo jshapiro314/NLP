@@ -629,3 +629,5 @@ print "Sparse Random Tree auto: %0.5f%" % (accuracy)
 ############################################
 ###Run Best Classifier on Test##############
 ############################################
+
+#This code was determined after running the above code once to see the highest performing classifiers on validation data
