@@ -1,0 +1,1161 @@
+  Labeled   attachment score: 423 / 494 * 100 = 85.63 %
+  Unlabeled attachment score: 433 / 494 * 100 = 87.65 %
+  Label accuracy score:       448 / 494 * 100 = 90.69 %
+
+  ================================================================================
+
+  Evaluation of the results in en-universal-dev-stackproj-Tagged-20.conll
+  vs. gold standard en-universal-dev-20.conll:
+
+  Legend: '.S' - the beginning of a sentence, '.E' - the end of a sentence
+
+  Number of non-scoring tokens: 61
+
+  The overall accuracy and its distribution over CPOSTAGs
+
+  -----------+-------+-------+------+-------+------+-------+-------
+  Accuracy   | words | right |   %  | right |   %  | both  |   %
+             |       | head  |      |  dep  |      | right |
+  -----------+-------+-------+------+-------+------+-------+-------
+  total      |   494 |   433 |  88% |   448 |  91% |   423 |  86%
+  -----------+-------+-------+------+-------+------+-------+-------
+  NOUN       |   143 |   127 |  89% |   123 |  86% |   121 |  85%
+  VERB       |   109 |    88 |  81% |    95 |  87% |    86 |  79%
+  DET        |    65 |    64 |  98% |    64 |  98% |    63 |  97%
+  ADP        |    50 |    41 |  82% |    46 |  92% |    41 |  82%
+  ADJ        |    36 |    31 |  86% |    32 |  89% |    30 |  83%
+  NUM        |    18 |    17 |  94% |    18 | 100% |    17 |  94%
+  ADV        |    16 |    15 |  94% |    16 | 100% |    15 |  94%
+  PRT        |    15 |    15 | 100% |    15 | 100% |    15 | 100%
+  CONJ       |    15 |    13 |  87% |    15 | 100% |    13 |  87%
+  .          |    14 |    10 |  71% |    12 |  86% |    10 |  71%
+  PRON       |    13 |    12 |  92% |    12 |  92% |    12 |  92%
+  -----------+-------+-------+------+-------+------+-------+-------
+
+
+  The overall error rate and its distribution over CPOSTAGs
+
+  -----------+-------+-------+------+-------+------+-------+-------
+  Error      | words | head  |   %  |  dep  |   %  | both  |   %
+  Rate       |       | err   |      |  err  |      | wrong |
+  -----------+-------+-------+------+-------+------+-------+-------
+  total      |   494 |    61 |  12% |    46 |   9% |    36 |   7%
+  -----------+-------+-------+------+-------+------+-------+-------
+  NOUN       |   143 |    16 |  11% |    20 |  14% |    14 |  10%
+  VERB       |   109 |    21 |  19% |    14 |  13% |    12 |  11%
+  DET        |    65 |     1 |   2% |     1 |   2% |     0 |   0%
+  ADP        |    50 |     9 |  18% |     4 |   8% |     4 |   8%
+  ADJ        |    36 |     5 |  14% |     4 |  11% |     3 |   8%
+  NUM        |    18 |     1 |   6% |     0 |   0% |     0 |   0%
+  ADV        |    16 |     1 |   6% |     0 |   0% |     0 |   0%
+  PRT        |    15 |     0 |   0% |     0 |   0% |     0 |   0%
+  CONJ       |    15 |     2 |  13% |     0 |   0% |     0 |   0%
+  .          |    14 |     4 |  29% |     2 |  14% |     2 |  14%
+  PRON       |    13 |     1 |   8% |     1 |   8% |     1 |   8%
+  -----------+-------+-------+------+-------+------+-------+-------
+
+
+  Precision and recall of DEPREL
+
+  ----------------+------+---------+--------+------------+---------------
+  deprel          | gold | correct | system | recall (%) | precision (%) 
+  ----------------+------+---------+--------+------------+---------------
+  ROOT            |   20 |      16 |     21 |      80.00 |         76.19
+  acomp           |    4 |       2 |      4 |      50.00 |         50.00
+  adp             |    4 |       4 |      4 |     100.00 |        100.00
+  adpcomp         |    6 |       6 |      6 |     100.00 |        100.00
+  adpmod          |   39 |      39 |     42 |     100.00 |         92.86
+  adpobj          |   33 |      31 |     37 |      93.94 |         83.78
+  advcl           |    8 |       6 |      6 |      75.00 |        100.00
+  advmod          |   15 |      12 |     13 |      80.00 |         92.31
+  amod            |   34 |      33 |     37 |      97.06 |         89.19
+  appos           |    5 |       4 |      5 |      80.00 |         80.00
+  attr            |    1 |       1 |      2 |     100.00 |         50.00
+  aux             |   30 |      30 |     31 |     100.00 |         96.77
+  auxpass         |   11 |      11 |     12 |     100.00 |         91.67
+  cc              |   15 |      15 |     15 |     100.00 |        100.00
+  ccomp           |    8 |       8 |     11 |     100.00 |         72.73
+  compmod         |   34 |      27 |     28 |      79.41 |         96.43
+  conj            |   12 |      11 |     13 |      91.67 |         84.62
+  dep             |   10 |       3 |      4 |      30.00 |         75.00
+  det             |   58 |      58 |     59 |     100.00 |         98.31
+  dobj            |   30 |      26 |     27 |      86.67 |         96.30
+  infmod          |    1 |       0 |      0 |       0.00 |           NaN
+  mark            |    8 |       7 |      7 |      87.50 |        100.00
+  neg             |    4 |       4 |      4 |     100.00 |        100.00
+  nmod            |    1 |       1 |      1 |     100.00 |        100.00
+  nsubj           |   40 |      37 |     42 |      92.50 |         88.10
+  nsubjpass       |   10 |       9 |      9 |      90.00 |        100.00
+  num             |   16 |      16 |     16 |     100.00 |        100.00
+  p               |    7 |       6 |      6 |      85.71 |        100.00
+  parataxis       |    1 |       0 |      0 |       0.00 |           NaN
+  partmod         |    1 |       1 |      3 |     100.00 |         33.33
+  poss            |    5 |       5 |      6 |     100.00 |         83.33
+  prt             |    1 |       1 |      2 |     100.00 |         50.00
+  rcmod           |    9 |       9 |      9 |     100.00 |        100.00
+  xcomp           |   13 |       9 |     12 |      69.23 |         75.00
+
+
+  Precision and recall of DEPREL + ATTACHMENT
+
+  ----------------+------+---------+--------+------------+---------------
+  deprel          | gold | correct | system | recall (%) | precision (%) 
+  ----------------+------+---------+--------+------------+---------------
+  ROOT            |   20 |      15 |     21 |      75.00 |         71.43
+  acomp           |    4 |       2 |      4 |      50.00 |         50.00
+  adp             |    4 |       4 |      4 |     100.00 |        100.00
+  adpcomp         |    6 |       6 |      6 |     100.00 |        100.00
+  adpmod          |   39 |      34 |     42 |      87.18 |         80.95
+  adpobj          |   33 |      31 |     37 |      93.94 |         83.78
+  advcl           |    8 |       2 |      6 |      25.00 |         33.33
+  advmod          |   15 |      11 |     13 |      73.33 |         84.62
+  amod            |   34 |      31 |     37 |      91.18 |         83.78
+  appos           |    5 |       4 |      5 |      80.00 |         80.00
+  attr            |    1 |       1 |      2 |     100.00 |         50.00
+  aux             |   30 |      30 |     31 |     100.00 |         96.77
+  auxpass         |   11 |      11 |     12 |     100.00 |         91.67
+  cc              |   15 |      13 |     15 |      86.67 |         86.67
+  ccomp           |    8 |       8 |     11 |     100.00 |         72.73
+  compmod         |   34 |      27 |     28 |      79.41 |         96.43
+  conj            |   12 |      10 |     13 |      83.33 |         76.92
+  dep             |   10 |       3 |      4 |      30.00 |         75.00
+  det             |   58 |      57 |     59 |      98.28 |         96.61
+  dobj            |   30 |      24 |     27 |      80.00 |         88.89
+  infmod          |    1 |       0 |      0 |       0.00 |           NaN
+  mark            |    8 |       7 |      7 |      87.50 |        100.00
+  neg             |    4 |       4 |      4 |     100.00 |        100.00
+  nmod            |    1 |       1 |      1 |     100.00 |        100.00
+  nsubj           |   40 |      36 |     42 |      90.00 |         85.71
+  nsubjpass       |   10 |       9 |      9 |      90.00 |        100.00
+  num             |   16 |      16 |     16 |     100.00 |        100.00
+  p               |    7 |       4 |      6 |      57.14 |         66.67
+  parataxis       |    1 |       0 |      0 |       0.00 |           NaN
+  partmod         |    1 |       1 |      3 |     100.00 |         33.33
+  poss            |    5 |       5 |      6 |     100.00 |         83.33
+  prt             |    1 |       1 |      2 |     100.00 |         50.00
+  rcmod           |    9 |       7 |      9 |      77.78 |         77.78
+  xcomp           |   13 |       8 |     12 |      61.54 |         66.67
+
+
+  Precision and recall of binned HEAD direction
+
+  ----------------+------+---------+--------+------------+---------------
+  direction       | gold | correct | system | recall (%) | precision (%) 
+  ----------------+------+---------+--------+------------+---------------
+  to_root         |   20 |      15 |     20 |      75.00 |         75.00
+  left            |  208 |     203 |    218 |      97.60 |         93.12
+  right           |  266 |     251 |    256 |      94.36 |         98.05
+  self            |    0 |       0 |      0 |        NaN |           NaN
+
+
+  Precision and recall of binned HEAD distance
+
+  ----------------+------+---------+--------+------------+---------------
+  distance        | gold | correct | system | recall (%) | precision (%) 
+  ----------------+------+---------+--------+------------+---------------
+  to_root         |   20 |      15 |     20 |      75.00 |         75.00
+  1               |  222 |     215 |    228 |      96.85 |         94.30
+  2               |  115 |     109 |    115 |      94.78 |         94.78
+  3-6             |   98 |      82 |     93 |      83.67 |         88.17
+  7-...           |   39 |      32 |     38 |      82.05 |         84.21
+
+
+  Frame confusions (gold versus system; *...* marks the head token)
+
+
+
+  7 focus words where most of the errors occur:
+
+                 | any  | head | dep  | both
+  ---------------+------+------+------+------
+  capital / NOUN |    2 |    2 |    2 |    2
+  working / NOUN |    2 |    1 |    2 |    1
+  to / ADP       |    2 |    2 |    1 |    1
+  by / ADP       |    2 |    2 |    0 |    0
+  and / CONJ     |    2 |    2 |    0 |    0
+  `` / .         |    2 |    2 |    1 |    1
+  said / VERB    |    2 |    2 |    2 |    2
+  ---------------+------+------+------+------
+
+
+  one-token preceeding contexts where most of the errors occur:
+
+  CPOS      | any  | head | dep  | both  ||  word                                 | any  | head | dep  | both
+  ----------+------+------+------+-------++---------------------------------------+------+------+------+-----
+  NOUN      |   16 |   16 |    9 |    9  ||  , / .                                |    6 |    5 |    3 |    2
+  VERB      |   14 |   11 |    9 |    6  ||  be / VERB                            |    3 |    3 |    2 |    2
+  .         |   12 |    9 |    8 |    5  ||  agency / NOUN                        |    2 |    2 |    0 |    0
+            |      |      |      |       ||  billion / NUM                        |    2 |    2 |    1 |    1
+            |      |      |      |       ||  `` / .                               |    2 |    2 |    1 |    1
+            |      |      |      |       ||  The / DET                            |    2 |    2 |    2 |    2
+            |      |      |      |       ||  and / CONJ                           |    2 |    2 |    1 |    1
+            |      |      |      |       ||  Treasury / NOUN                      |    2 |    2 |    2 |    2
+            |      |      |      |       ||  to / ADP                             |    2 |    2 |    2 |    2
+  ----------+------+------+------+-------++---------------------------------------+------+------+------+-----
+
+
+  two-token preceeding contexts where most of the errors occur:
+
+  CPOS      | any  | head | dep  | both  ||  word                                 | any  | head | dep  | both
+  ----------+------+------+------+-------++---------------------------------------+------+------+------+-----
+  NOUN+.    |    8 |    5 |    6 |    3  ||  debt / NOUN + , / .                  |    2 |    2 |    1 |    1
+  ADJ+NOUN  |    5 |    5 |    2 |    2  ||  .S + The / DET                       |    2 |    2 |    2 |    2
+  VERB+VERB |    4 |    3 |    3 |    2  ||  far / ADV + more / ADV               |    1 |    1 |    1 |    1
+  NOUN+NOUN |    4 |    4 |    3 |    3  ||  also / ADV + requires / VERB         |    1 |    1 |    0 |    0
+  .S+.S     |    4 |    3 |    3 |    2  ||  could / VERB + be / VERB             |    1 |    1 |    1 |    1
+            |      |      |      |       ||  , / . + would / VERB                 |    1 |    1 |    1 |    1
+            |      |      |      |       ||  to / ADP + me / PRON                 |    1 |    1 |    1 |    1
+            |      |      |      |       ||  direct / ADJ + Treasury / NOUN       |    1 |    1 |    1 |    1
+            |      |      |      |       ||  can / VERB + be / VERB               |    1 |    1 |    0 |    0
+            |      |      |      |       ||  the / DET + Treasury / NOUN          |    1 |    1 |    1 |    1
+            |      |      |      |       ||  Absent / VERB + other / ADJ          |    1 |    0 |    1 |    0
+            |      |      |      |       ||  working / NOUN + '' / .              |    1 |    1 |    1 |    1
+            |      |      |      |       ||  Ways / NOUN + and / CONJ             |    1 |    1 |    1 |    1
+            |      |      |      |       ||  19 / NUM + billion / NUM             |    1 |    1 |    1 |    1
+            |      |      |      |       ||  not / ADV + keeping / VERB           |    1 |    1 |    1 |    1
+            |      |      |      |       ||  expensive / ADJ + than / ADP         |    1 |    1 |    0 |    0
+            |      |      |      |       ||  capital / NOUN + , / .               |    1 |    1 |    1 |    1
+            |      |      |      |       ||  merge / VERB + 600 / NUM             |    1 |    1 |    0 |    0
+            |      |      |      |       ||  complex / ADJ + financing / NOUN     |    1 |    1 |    0 |    0
+            |      |      |      |       ||  plan / NOUN + , / .                  |    1 |    1 |    0 |    0
+            |      |      |      |       ||  Chairman / NOUN + Dan / NOUN         |    1 |    1 |    1 |    1
+            |      |      |      |       ||  Treasury / NOUN + up / ADP           |    1 |    1 |    1 |    1
+            |      |      |      |       ||  `` / . + Such / ADJ                  |    1 |    1 |    1 |    1
+            |      |      |      |       ||  Treasury / NOUN + borrowings / NOUN  |    1 |    1 |    0 |    0
+            |      |      |      |       ||  been / VERB + remiss / ADJ           |    1 |    1 |    0 |    0
+            |      |      |      |       ||  me / PRON + sort / NOUN              |    1 |    1 |    1 |    1
+            |      |      |      |       ||  sort / NOUN + of / ADP               |    1 |    1 |    1 |    1
+            |      |      |      |       ||  if / ADP + they / PRON               |    1 |    1 |    0 |    0
+            |      |      |      |       ||  .S + `` / .                          |    1 |    1 |    0 |    0
+            |      |      |      |       ||  we / PRON + have / VERB              |    1 |    0 |    1 |    0
+            |      |      |      |       ||  or / CONJ + merge / VERB             |    1 |    1 |    0 |    0
+            |      |      |      |       ||  potential / ADJ + obstacle / NOUN    |    1 |    1 |    0 |    0
+            |      |      |      |       ||  law / NOUN + includes / VERB         |    1 |    1 |    1 |    1
+            |      |      |      |       ||  D. / NOUN + , / .                    |    1 |    0 |    1 |    0
+            |      |      |      |       ||  agency / NOUN + ` / .                |    1 |    0 |    1 |    0
+            |      |      |      |       ||  keeping / VERB + Congress / NOUN     |    1 |    1 |    1 |    1
+            |      |      |      |       ||  the / DET + agency / NOUN            |    1 |    1 |    0 |    0
+            |      |      |      |       ||  more / ADJ + public / ADJ            |    1 |    1 |    0 |    0
+            |      |      |      |       ||  30 / NUM + billion / NUM             |    1 |    1 |    0 |    0
+            |      |      |      |       ||  or / CONJ + intend / VERB            |    1 |    1 |    1 |    1
+            |      |      |      |       ||  sold / VERB + , / .                  |    1 |    1 |    0 |    0
+            |      |      |      |       ||  thrift / NOUN + resolutions / NOUN   |    1 |    1 |    1 |    1
+            |      |      |      |       ||  the / DET + new / ADJ                |    1 |    0 |    1 |    0
+            |      |      |      |       ||  other / ADJ + working / NOUN         |    1 |    1 |    1 |    1
+            |      |      |      |       ||  and / CONJ + Means / NOUN            |    1 |    1 |    1 |    1
+            |      |      |      |       ||  after / ADP + including / VERB       |    1 |    0 |    1 |    0
+            |      |      |      |       ||  than / ADP + direct / ADJ            |    1 |    1 |    1 |    1
+            |      |      |      |       ||  seems / VERB + to / ADP              |    1 |    1 |    1 |    1
+            |      |      |      |       ||  . / . + ) / .                        |    1 |    1 |    1 |    1
+            |      |      |      |       ||  requires / VERB + `` / .             |    1 |    1 |    1 |    1
+            |      |      |      |       ||  RTC / NOUN + is / VERB               |    1 |    1 |    0 |    0
+            |      |      |      |       ||  Such / ADJ + agency / NOUN           |    1 |    1 |    0 |    0
+            |      |      |      |       ||  has / VERB + been / VERB             |    1 |    0 |    1 |    0
+            |      |      |      |       ||  , / . + and / CONJ                   |    1 |    1 |    0 |    0
+            |      |      |      |       ||  , / . + he / PRON                    |    1 |    1 |    1 |    1
+            |      |      |      |       ||  would / VERB + be / VERB             |    1 |    1 |    1 |    1
+            |      |      |      |       ||  working / VERB + capital / NOUN      |    1 |    1 |    0 |    0
+            |      |      |      |       ||  , / . + which / DET                  |    1 |    1 |    0 |    0
+            |      |      |      |       ||  resolutions / NOUN + until / ADP     |    1 |    1 |    1 |    1
+            |      |      |      |       ||  we / PRON + can / VERB               |    1 |    1 |    0 |    0
+            |      |      |      |       ||  the / DET + RTC / NOUN               |    1 |    1 |    0 |    0
+            |      |      |      |       ||  capital / NOUN + to / PRT            |    1 |    0 |    1 |    0
+            |      |      |      |       ||  bailout / NOUN + law / NOUN          |    1 |    1 |    1 |    1
+            |      |      |      |       ||  up / ADP + to / ADP                  |    1 |    1 |    1 |    1
+            |      |      |      |       ||  Rostenkowski / NOUN + ( / .          |    1 |    0 |    1 |    0
+  ----------+------+------+------+-------++---------------------------------------+------+------+------+-----
+
+
+  one-token following contexts where most of the errors occur:
+
+  CPOS      | any  | head | dep  | both  ||  word                                 | any  | head | dep  | both
+  ----------+------+------+------+-------++---------------------------------------+------+------+------+-----
+  .         |   18 |   14 |   15 |   11  ||  , / .                                |    8 |    7 |    6 |    5
+  NOUN      |   14 |   12 |    7 |    5  ||  the / DET                            |    6 |    5 |    3 |    2
+  ADP       |   10 |    8 |    6 |    4  ||  $ / .                                |    3 |    2 |    3 |    2
+            |      |      |      |       ||  to / PRT                             |    3 |    3 |    2 |    2
+  ----------+------+------+------+-------++---------------------------------------+------+------+------+-----
+
+
+  two-token following contexts where most of the errors occur:
+
+  CPOS      | any  | head | dep  | both  ||  word                                 | any  | head | dep  | both
+  ----------+------+------+------+-------++---------------------------------------+------+------+------+-----
+  DET+NOUN  |    6 |    6 |    3 |    3  ||  . / . + .E                           |    2 |    2 |    1 |    1
+  NOUN+.    |    5 |    4 |    2 |    1  ||  , / . + '' / .                       |    2 |    2 |    2 |    2
+  .+NOUN    |    5 |    3 |    5 |    3  ||  and / CONJ + other / ADJ             |    1 |    0 |    1 |    0
+            |      |      |      |       ||  public / ADJ + debt / NOUN           |    1 |    1 |    1 |    1
+            |      |      |      |       ||  to / PRT + delay / VERB              |    1 |    1 |    1 |    1
+            |      |      |      |       ||  34 / NUM + insolvent / ADJ           |    1 |    1 |    1 |    1
+            |      |      |      |       ||  could / VERB + be / VERB             |    1 |    1 |    1 |    1
+            |      |      |      |       ||  to / PRT + maintain / VERB           |    1 |    1 |    1 |    1
+            |      |      |      |       ||  to / ADP + me / PRON                 |    1 |    1 |    0 |    0
+            |      |      |      |       ||  borrowing / NOUN + , / .             |    1 |    1 |    1 |    1
+            |      |      |      |       ||  to / ADP + $ / .                     |    1 |    1 |    1 |    1
+            |      |      |      |       ||  working / NOUN + '' / .              |    1 |    1 |    0 |    0
+            |      |      |      |       ||  Ways / NOUN + and / CONJ             |    1 |    1 |    0 |    0
+            |      |      |      |       ||  ( / . + D. / NOUN                    |    1 |    1 |    1 |    1
+            |      |      |      |       ||  the / DET + Resolution / NOUN        |    1 |    1 |    1 |    1
+            |      |      |      |       ||  cash / NOUN + could / VERB           |    1 |    1 |    1 |    1
+            |      |      |      |       ||  another / DET + potential / ADJ      |    1 |    1 |    1 |    1
+            |      |      |      |       ||  the / DET + government / NOUN        |    1 |    1 |    0 |    0
+            |      |      |      |       ||  , / . + unless / ADP                 |    1 |    1 |    0 |    0
+            |      |      |      |       ||  draconian / ADJ + , / .              |    1 |    1 |    1 |    1
+            |      |      |      |       ||  not / ADV + keeping / VERB           |    1 |    1 |    0 |    0
+            |      |      |      |       ||  capital / NOUN + , / .               |    1 |    0 |    1 |    0
+            |      |      |      |       ||  the / DET + total / ADJ              |    1 |    1 |    0 |    0
+            |      |      |      |       ||  ` / . + self-help / NOUN             |    1 |    1 |    1 |    1
+            |      |      |      |       ||  $ / . + 5 / NUM                      |    1 |    1 |    1 |    1
+            |      |      |      |       ||  ' / . + borrowing / NOUN             |    1 |    0 |    1 |    0
+            |      |      |      |       ||  $ / . + 20 / NUM                     |    1 |    0 |    1 |    0
+            |      |      |      |       ||  , / . + the / DET                    |    1 |    1 |    1 |    1
+            |      |      |      |       ||  opponents / NOUN + of / ADP          |    1 |    1 |    1 |    1
+            |      |      |      |       ||  , / . + say / VERB                   |    1 |    1 |    0 |    0
+            |      |      |      |       ||  that / DET + kind / NOUN             |    1 |    1 |    0 |    0
+            |      |      |      |       ||  sort / NOUN + of / ADP               |    1 |    1 |    1 |    1
+            |      |      |      |       ||  from / ADP + it / PRON               |    1 |    1 |    0 |    0
+            |      |      |      |       ||  specific / ADJ + congressional / ADJ |    1 |    1 |    0 |    0
+            |      |      |      |       ||  agency / NOUN + ` / .                |    1 |    1 |    0 |    0
+            |      |      |      |       ||  The / DET + RTC / NOUN               |    1 |    1 |    1 |    1
+            |      |      |      |       ||  Committee / NOUN + will / VERB       |    1 |    1 |    1 |    1
+            |      |      |      |       ||  Rep. / NOUN + Charles / NOUN         |    1 |    1 |    0 |    0
+            |      |      |      |       ||  self-help / NOUN + ' / .             |    1 |    1 |    0 |    0
+            |      |      |      |       ||  by / ADP + the / DET                 |    1 |    1 |    0 |    0
+            |      |      |      |       ||  on / ADP + those / DET               |    1 |    0 |    1 |    0
+            |      |      |      |       ||  having / VERB + an / DET             |    1 |    1 |    0 |    0
+            |      |      |      |       ||  informed / VERB + . / .              |    1 |    1 |    1 |    1
+            |      |      |      |       ||  '' / . + capital / NOUN              |    1 |    1 |    1 |    1
+            |      |      |      |       ||  of / ADP + draconian / ADJ           |    1 |    1 |    1 |    1
+            |      |      |      |       ||  separately / ADV + . / .             |    1 |    1 |    0 |    0
+            |      |      |      |       ||  the / DET + time / NOUN              |    1 |    1 |    0 |    0
+            |      |      |      |       ||  and / CONJ + Means / NOUN            |    1 |    1 |    1 |    1
+            |      |      |      |       ||  forward / ADV + , / .                |    1 |    1 |    0 |    0
+            |      |      |      |       ||  ) / . + , / .                        |    1 |    0 |    1 |    0
+            |      |      |      |       ||  other / ADJ + working / NOUN         |    1 |    1 |    1 |    1
+            |      |      |      |       ||  subtracting / VERB + from / ADP      |    1 |    1 |    0 |    0
+            |      |      |      |       ||  than / ADP + direct / ADJ            |    1 |    1 |    1 |    1
+            |      |      |      |       ||  , / . + whose / PRON                 |    1 |    1 |    1 |    1
+            |      |      |      |       ||  raising / VERB + $ / .               |    1 |    1 |    1 |    1
+            |      |      |      |       ||  bailout / NOUN + agency / NOUN       |    1 |    0 |    1 |    0
+            |      |      |      |       ||  in / ADP + not / ADV                 |    1 |    0 |    1 |    0
+            |      |      |      |       ||  , / . + Ill. / NOUN                  |    1 |    0 |    1 |    0
+            |      |      |      |       ||  by / ADP + selling / VERB            |    1 |    1 |    1 |    1
+            |      |      |      |       ||  Treasury / NOUN + borrowing / NOUN   |    1 |    1 |    0 |    0
+            |      |      |      |       ||  to / PRT + have / VERB               |    1 |    1 |    0 |    0
+            |      |      |      |       ||  will / VERB + hold / VERB            |    1 |    1 |    1 |    1
+            |      |      |      |       ||  $ / . + 30 / NUM                     |    1 |    1 |    1 |    1
+            |      |      |      |       ||  , / . + he / PRON                    |    1 |    1 |    1 |    1
+            |      |      |      |       ||  in / ADP + the / DET                 |    1 |    1 |    0 |    0
+            |      |      |      |       ||  5 / NUM + billion / NUM              |    1 |    1 |    1 |    1
+            |      |      |      |       ||  the / DET + bad / ADJ                |    1 |    0 |    1 |    0
+            |      |      |      |       ||  debt / NOUN + issued / VERB          |    1 |    1 |    0 |    0
+            |      |      |      |       ||  the / DET + RTC / NOUN               |    1 |    1 |    1 |    1
+  ----------+------+------+------+-------++---------------------------------------+------+------+------+-----
+
+
+  Sentence with the highest number of word errors:
+   Sentence 4 line 106, 7 head errors, 6 dependency errors, 9 word errors
+
+
+  Sentence with the highest number of head errors:
+   Sentence 17 line 460, 8 head errors, 6 dependency errors, 9 word errors
+
+
+  Sentence with the highest number of dependency errors:
+   Sentence 12 line 328, 7 head errors, 8 dependency errors, 8 word errors
+
+
+  Specific errors, 61 most frequent errors:
+  =========================================
+
+   1. head two words after the correct head (before the focus word), correct dependency : 6 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       |             | VERB |                  |      |             |   3
+  -----+-------------+------+------------------+------+-------------+------
+
+   2. head one word after the correct head (after the focus word), correct dependency : 2 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  NOUN |             |      |                  |      |             |   2
+       | agency      |      |                  | NOUN | self-help   |   1
+  NOUN | agency      | .    | `                | NOUN | self-help   |   1
+  NOUN | financing   | NOUN | plan             | ADP  | in          |   1
+       | financing   | NOUN |                  |      | in          |   1
+       | financing   |      | plan             | ADP  |             |   1
+       |             | NOUN | plan             |      | in          |   1
+  NOUN | agency      | .    |                  |      |             |   1
+  NOUN |             | .    |                  | NOUN |             |   1
+       | financing   | NOUN |                  | ADP  |             |   1
+  NOUN | agency      |      | `                |      |             |   1
+       | agency      |      | `                |      | self-help   |   1
+       | financing   |      | plan             |      | in          |   1
+  NOUN |             | NOUN |                  | ADP  |             |   1
+       |             |      | plan             | ADP  | in          |   1
+       |             | NOUN | plan             | ADP  |             |   1
+  NOUN | financing   | NOUN |                  |      |             |   1
+       | financing   | NOUN | plan             |      |             |   1
+  NOUN |             | NOUN | plan             |      |             |   1
+  NOUN | agency      |      |                  |      | self-help   |   1
+       | agency      | .    |                  |      | self-help   |   1
+       |             | .    |                  | NOUN | self-help   |   1
+  NOUN |             |      | plan             | ADP  |             |   1
+       |             | NOUN |                  | ADP  | in          |   1
+  NOUN |             |      | `                | NOUN |             |   1
+  NOUN |             |      |                  | NOUN | self-help   |   1
+  NOUN | financing   |      | plan             |      |             |   1
+       |             |      | `                | NOUN | self-help   |   1
+  NOUN |             |      | plan             |      | in          |   1
+  NOUN |             | NOUN |                  |      | in          |   1
+  NOUN | agency      |      |                  | NOUN |             |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+   3. head two words before the correct head (before the focus word), correct dependency : 2 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       |             |      |                  | ADP  |             |   1
+  CONJ | and         | VERB | subtracting      | ADP  | from        |   1
+       |             |      | subtracting      |      | from        |   1
+  .    | ,           | CONJ | and              | VERB | subtracting |   1
+  .    |             |      |                  |      |             |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+   4. correct head (after the focus word), dependency "amod" instead of "compmod" : 2 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  ADJ  |             | NOUN |                  | NOUN |             |   2
+  ADJ  | other       | NOUN | working          | NOUN | capital     |   1
+  ADJ  | new         | NOUN | savings-and-loan | NOUN | bailout     |   1
+       |             |      |                  |      | bailout     |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+   5. head three words before the correct head (before the focus word), correct dependency : 2 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  NOUN |             |      |                  |      |             |   2
+  NOUN |             |      | holds            |      | .           |   1
+       |             | ADP  | to               | DET  |             |   1
+  NOUN | RTC         | VERB | holds            | .    | .           |   1
+       |             | ADP  |                  | DET  | the         |   1
+  NOUN |             | ADP  | to               |      |             |   1
+       | obstacle    | ADP  |                  | DET  |             |   1
+  NOUN | obstacle    | ADP  | to               | DET  | the         |   1
+  NOUN |             | ADP  |                  | DET  |             |   1
+       |             |      | holds            | .    | .           |   1
+  NOUN | RTC         |      | holds            |      |             |   1
+  NOUN |             | VERB | holds            |      |             |   1
+  NOUN |             |      | holds            | .    |             |   1
+  NOUN |             | ADP  |                  |      | the         |   1
+  NOUN | obstacle    | ADP  |                  |      |             |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+   6. head 6 words after the correct head (before the focus word), correct dependency : 2 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       | capital     | ADP  |                  | VERB |             |   1
+  NOUN |             |      |                  | VERB |             |   1
+       | capital     | ADP  | by               |      |             |   1
+  NOUN | capital     | ADP  | by               | VERB | having      |   1
+       | capital     | ADP  |                  |      | having      |   1
+  .    |             |      |                  |      | the         |   1
+  .    | ,           | VERB | leaving          | DET  | the         |   1
+  NOUN | capital     | ADP  |                  |      |             |   1
+       |             | VERB |                  |      |             |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+   7. head four words before the correct head (before the focus word instead ofbefore the focus word), dependency "adpobj" instead of "nsubjpass" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       |             | NOUN |                  |      | could       |   1
+  ADP  |             | NOUN |                  |      |             |   1
+  ADP  | until       | NOUN | cash             | VERB | could       |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+   8. head is the focus word instead of 0, correct dependency : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       | is          | VERB |                  |      |             |   1
+       |             | VERB |                  | PRT  |             |   1
+  VERB | is          |      |                  |      |             |   1
+  VERB | is          | VERB | going            | PRT  | to          |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+   9. head 9 words before the correct head (after the focus word), dependency "amod" instead of "dep" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       |             |      | Absent           | ADJ  |             |   1
+  .S   | .S          | VERB | Absent           | ADJ  | other       |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  10. correct head (before the focus word), dependency "appos" instead of "dep" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       | ,           | NOUN |                  |      | )           |   1
+       | ,           |      |                  | .    | )           |   1
+  .    | ,           |      |                  |      | )           |   1
+       | ,           |      | Calif.           |      | )           |   1
+  .    | ,           |      | Calif.           |      |             |   1
+  .    | ,           | NOUN | Calif.           | .    | )           |   1
+       | ,           | NOUN | Calif.           |      |             |   1
+  .    |             | NOUN |                  |      | )           |   1
+       |             | NOUN |                  | .    | )           |   1
+       |             | NOUN | Calif.           | .    |             |   1
+       |             | NOUN | Calif.           |      | )           |   1
+  .    |             | NOUN | Calif.           |      |             |   1
+       | ,           |      | Calif.           | .    |             |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  11. head two words after the correct head (before the focus word), dependency "acomp" instead of "dobj" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  .    | ''          | NOUN | capital          | PRT  | to          |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  12. head one word after the correct head (after the focus word), dependency "nsubj" instead of "compmod" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  ADJ  | Such        | NOUN | agency           | .    | `           |   1
+       | Such        | NOUN | agency           |      |             |   1
+       | Such        |      | agency           |      | `           |   1
+  ADJ  |             |      | agency           | .    |             |   1
+  ADJ  |             | NOUN |                  |      | `           |   1
+       | Such        | NOUN |                  | .    |             |   1
+  ADJ  |             | NOUN |                  | .    |             |   1
+  ADJ  |             | NOUN | agency           |      |             |   1
+       |             |      | agency           | .    | `           |   1
+       |             | NOUN | agency           | .    |             |   1
+  ADJ  | Such        |      | agency           |      |             |   1
+       | Such        |      | agency           | .    |             |   1
+  ADJ  | Such        | NOUN |                  |      |             |   1
+       |             | NOUN | agency           |      | `           |   1
+       |             | NOUN |                  | .    | `           |   1
+       | Such        | NOUN |                  |      | `           |   1
+  ADJ  |             |      | agency           |      | `           |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  13. head four words before the correct head (after the focus word), correct dependency : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  .    | ``          | ADJ  | Such             | NOUN | agency      |   1
+  .    | ``          | ADJ  |                  |      |             |   1
+  .    |             | ADJ  |                  | NOUN |             |   1
+  .    |             |      | Such             |      | agency      |   1
+  .    | ``          |      | Such             |      |             |   1
+  .    | ``          |      |                  | NOUN |             |   1
+  .    |             |      |                  | NOUN | agency      |   1
+  .    |             |      | Such             | NOUN |             |   1
+  .    | ``          |      |                  |      | agency      |   1
+  .    |             | ADJ  | Such             |      |             |   1
+  .    |             | ADJ  |                  |      | agency      |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  14. head three words before the correct head (before the focus word instead ofbefore the focus word), dependency "adpobj" instead of "dep" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  PRON | me          | NOUN | sort             | ADP  | of          |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  15. head 11 words after the correct head (after the focus word instead ofafter the focus word), dependency "nsubj" instead of "dobj" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       |             |      | Rostenkowski     |      |             |   1
+  NOUN | Dan         | NOUN | Rostenkowski     | .    | (           |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  16. head two words after the correct head (after the focus word), dependency "nsubj" instead of "compmod" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  DET  | The         | NOUN | Ways             | CONJ | and         |   1
+       | The         | NOUN |                  | CONJ |             |   1
+  DET  |             | NOUN |                  |      | and         |   1
+       |             | NOUN | Ways             | CONJ |             |   1
+       |             | NOUN | Ways             |      | and         |   1
+  DET  |             | NOUN |                  | CONJ |             |   1
+  DET  | The         | NOUN |                  |      |             |   1
+       | The         | NOUN | Ways             |      |             |   1
+       | The         | NOUN |                  |      | and         |   1
+  DET  |             | NOUN | Ways             |      |             |   1
+       |             | NOUN |                  | CONJ | and         |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  17. head one word after the correct head (before the focus word), correct dependency : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  NUM  | billion     | ADP  | from             | NOUN | debt        |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  18. head four words after the correct head (before the focus word), correct dependency : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  VERB | can         |      |                  |      |             |   1
+  VERB |             |      |                  | ADV  |             |   1
+  VERB | can         | VERB | move             | ADV  | forward     |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  19. head is the focus word instead of 0, dependency "conj" instead of "ROOT" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       |             |      |                  | DET  |             |   1
+  .    | )           | VERB | said             | DET  | the         |   1
+  .    | )           |      |                  |      |             |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  20. head 19 words before the correct head (before the focus word instead ofbefore the focus word), correct dependency : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  .    | ,           |      |                  |      |             |   1
+  .    | ,           | CONJ | and              | NOUN | Rep.        |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  21. head two words before the correct head (after the focus word), correct dependency : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       |             |      | ``               |      |             |   1
+  VERB | requires    | .    | ``               | NOUN | working     |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  22. head is the focus word instead of 0, dependency "ccomp" instead of "ROOT" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  VERB | be          | VERB | forced           | PRT  | to          |   1
+       |             |      |                  |      | to          |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  23. head one word before the correct head (before the focus word), dependency "acomp" instead of "dep" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       |             | ADJ  |                  |      |             |   1
+  ADV  | more        | ADJ  | expensive        | ADP  | than        |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  24. head 6 words after the correct head (after the focus word instead ofafter the focus word), dependency "nsubj" instead of "dep" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  NOUN | working     | NOUN | capital          | .    | ,           |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  25. head 5 words after the correct head (before the focus word), dependency "adpobj" instead of "dobj" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  ADP  | to          | .    | $                | NUM  | 5           |   1
+       |             | .    |                  |      |             |   1
+  ADP  |             |      | $                |      | 5           |   1
+       | to          |      | $                |      | 5           |   1
+  ADP  | to          |      |                  | NUM  |             |   1
+  ADP  |             |      |                  | NUM  | 5           |   1
+       | to          |      | $                | NUM  |             |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  26. head three words before the correct head (after the focus word), correct dependency : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       | .S          |      | The              |      |             |   1
+  .S   | .S          | DET  | The              | NOUN | Ways        |   1
+  .S   |             |      |                  | NOUN | Ways        |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  27. head two words before the correct head (before the focus word), dependency "xcomp" instead of "advcl" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  VERB |             |      |                  |      |             |   1
+  VERB | be          | VERB | raised           | ADP  | by          |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  28. head three words before the correct head (before the focus word instead ofbefore the focus word), dependency "adpobj" instead of "compmod" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       |             |      | Treasury         |      | borrowing   |   1
+       | direct      |      | Treasury         |      |             |   1
+  ADJ  | direct      | NOUN | Treasury         | NOUN | borrowing   |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  29. head 8 words after the correct head (before the focus word), dependency "partmod" instead of "xcomp" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  .    | ,           | VERB | creating         | DET  | another     |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  30. head four words after the correct head (before the focus word), dependency "adpobj" instead of "acomp" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  ADP  |             |      | draconian        |      |             |   1
+  ADP  |             |      |                  |      | ,           |   1
+       | of          |      | draconian        |      |             |   1
+  ADP  | of          |      |                  |      |             |   1
+       | of          |      |                  | .    |             |   1
+  ADP  | of          | ADJ  | draconian        | .    | ,           |   1
+       | of          | ADJ  |                  |      |             |   1
+       | of          |      |                  |      | ,           |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  31. head = 0 instead of before the focus word, dependency "ROOT" instead of "xcomp" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  VERB | includes    | VERB | raising          | .    | $           |   1
+       |             |      | raising          | .    | $           |   1
+       | includes    |      |                  | .    | $           |   1
+       |             | VERB | raising          |      | $           |   1
+  VERB |             |      |                  | .    | $           |   1
+       |             | VERB |                  | .    | $           |   1
+  VERB |             |      | raising          |      | $           |   1
+       | includes    |      | raising          |      | $           |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  32. head three words before the correct head (before the focus word instead ofbefore the focus word), dependency "prt" instead of "advmod" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  NOUN |             | ADP  |                  |      |             |   1
+       | Treasury    | ADP  |                  |      |             |   1
+  NOUN | Treasury    | ADP  | up               | ADP  | to          |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  33. correct head (after the focus word), dependency "poss" instead of "compmod" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       |             |      | self-help        | .    | '           |   1
+  .    | `           |      |                  | .    |             |   1
+  .    | `           | NOUN | self-help        | .    | '           |   1
+  .    |             |      |                  | .    | '           |   1
+       | `           |      |                  | .    | '           |   1
+  .    | `           |      | self-help        |      |             |   1
+       |             | NOUN |                  | .    | '           |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  34. head three words after the correct head (after the focus word instead ofafter the focus word), dependency "compmod" instead of "conj" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  CONJ |             |      |                  |      |             |   1
+  CONJ | and         | NOUN | Means            | NOUN | Committee   |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  35. head two words before the correct head (before the focus word instead ofbefore the focus word), dependency "dobj" instead of "nsubj" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  VERB |             |      |                  |      | informed    |   1
+  VERB |             |      |                  | VERB |             |   1
+  VERB | keeping     | NOUN | Congress         | VERB | informed    |   1
+  VERB |             | NOUN |                  |      |             |   1
+       |             |      | Congress         | VERB |             |   1
+  VERB |             |      | Congress         |      |             |   1
+  VERB | keeping     |      |                  |      |             |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  36. correct head (before the focus word), dependency "attr" instead of "acomp" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  VERB | been        | ADJ  | remiss           | ADP  | in          |   1
+       | been        |      | remiss           | ADP  |             |   1
+       |             | ADJ  | remiss           | ADP  |             |   1
+       |             |      | remiss           | ADP  | in          |   1
+  VERB |             |      | remiss           | ADP  |             |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  37. head = 0 instead of after the focus word, dependency "ROOT" instead of "nsubj" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       |             | NOUN |                  | .    | ,           |   1
+       | The         | NOUN | bill             |      |             |   1
+  DET  | The         | NOUN | bill             | .    | ,           |   1
+  DET  | The         | NOUN |                  |      |             |   1
+  DET  | The         |      |                  |      | ,           |   1
+       | The         |      |                  | .    | ,           |   1
+       | The         |      | bill             | .    |             |   1
+       | The         | NOUN |                  |      | ,           |   1
+  DET  | The         |      |                  | .    |             |   1
+       |             | NOUN | bill             | .    |             |   1
+       | The         |      | bill             |      | ,           |   1
+  DET  |             |      | bill             |      | ,           |   1
+  DET  |             | NOUN |                  | .    |             |   1
+       |             | NOUN | bill             |      | ,           |   1
+  DET  | The         |      | bill             |      |             |   1
+  DET  |             |      |                  | .    | ,           |   1
+       | The         | NOUN |                  | .    |             |   1
+  DET  |             |      | bill             | .    |             |   1
+       |             |      | bill             | .    | ,           |   1
+  DET  |             | NOUN | bill             |      |             |   1
+  DET  |             | NOUN |                  |      | ,           |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  38. head 5 words before the correct head (before the focus word instead ofbefore the focus word), dependency "conj" instead of "nsubj" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  NOUN | Means       | NOUN | Committee        | VERB | will        |   1
+  NOUN |             |      |                  | VERB |             |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  39. head one word before the correct head (after the focus word), correct dependency : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       |             |      | direct           |      |             |   1
+  ADP  | than        | ADJ  | direct           | NOUN | Treasury    |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  40. head two words after the correct head (before the focus word), dependency "partmod" instead of "xcomp" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  NUM  | billion     | VERB | selling          | NUM  | 34          |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  41. head = 0 instead of after the focus word, dependency "ROOT" instead of "p" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       |             |      | ``               |      |             |   1
+  .S   | .S          | .    | ``               | DET  | The         |   1
+  .S   |             |      |                  |      | The         |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  42. head four words before the correct head (before the focus word instead ofbefore the focus word), dependency "xcomp" instead of "compmod" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  .    | ``          | NOUN | working          | .    | ''          |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  43. head two words after the correct head (before the focus word), dependency "amod" instead of "adpobj" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  NOUN | Treasury    | NOUN | borrowing        | .    | ,           |   1
+  NOUN | Treasury    |      | borrowing        |      |             |   1
+  NOUN | Treasury    |      |                  | .    |             |   1
+  NOUN |             |      | borrowing        | .    |             |   1
+  NOUN |             |      | borrowing        |      | ,           |   1
+  NOUN |             | NOUN | borrowing        |      |             |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  44. head 5 words before the correct head (before the focus word), correct dependency : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  NOUN | borrowings  | ADV  | only             | .    | ,           |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  45. head one word before the correct head (after the focus word), dependency "advmod" instead of "amod" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  VERB | intend      | ADJ  | more             | ADJ  | public      |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  46. head = 0 instead of after the focus word, dependency "ROOT" instead of "dep" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  .    | ,           | VERB | say              | NOUN | opponents   |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  47. head two words after the correct head (after the focus word instead ofafter the focus word), dependency "nsubj" instead of "adpobj" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  ADP  | to          | PRON | me               | NOUN | sort        |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  48. correct head (before the focus word), dependency "xcomp" instead of "infmod" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  PRT  |             |      |                  |      |             |   1
+       |             |      |                  | DET  |             |   1
+  PRT  | to          | VERB | maintain         | DET  | the         |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  49. head two words before the correct head (before the focus word instead ofbefore the focus word), dependency "adpmod" instead of "advmod" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  NOUN | sort        |      |                  |      |             |   1
+  NOUN | sort        | ADP  | of               | ADJ  | draconian   |   1
+       |             |      | of               |      | draconian   |   1
+  NOUN |             |      | of               |      |             |   1
+       | sort        |      |                  |      | draconian   |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  50. head four words before the correct head (before the focus word), correct dependency : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       | be          | VERB |                  | ADV  |             |   1
+  VERB | be          | VERB | sold             | ADV  | separately  |   1
+  VERB | be          |      |                  |      | separately  |   1
+       | be          |      | sold             | ADV  |             |   1
+  VERB | be          | VERB |                  |      |             |   1
+  VERB | be          |      | sold             |      |             |   1
+  VERB | be          |      |                  | ADV  |             |   1
+       | be          |      |                  | ADV  | separately  |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  51. head is the focus word instead of 0, dependency "aux" instead of "ROOT" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       |             | VERB |                  | VERB | raising     |   1
+  NOUN | law         | VERB | includes         | VERB | raising     |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  52. correct head (before the focus word), dependency "adpobj" instead of "dobj" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       |             |      | notes            | CONJ |             |   1
+  VERB | including   | NOUN | notes            | CONJ | and         |   1
+       | including   |      |                  | CONJ |             |   1
+  VERB | including   | NOUN |                  |      |             |   1
+       |             |      |                  |      | and         |   1
+  VERB |             | NOUN | notes            |      |             |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  53. head four words before the correct head (before the focus word), dependency "auxpass" instead of "xcomp" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  NOUN |             | VERB |                  |      |             |   1
+  NOUN | Congress    |      |                  |      |             |   1
+  NOUN | Congress    | VERB | informed         | .    | .           |   1
+       | Congress    | VERB |                  |      |             |   1
+       | Congress    |      |                  | .    |             |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  54. correct head (after the focus word), dependency "det" instead of "advmod" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  .S   |             |      |                  |      |             |   1
+  .S   | .S          | DET  | Another          | .    | $           |   1
+       |             | DET  |                  |      |             |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  55. correct head (before the focus word), dependency "dep" instead of "appos" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  .    | (           | NOUN | D.               | .    | ,           |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  56. head = 0 instead of after the focus word, dependency "ROOT" instead of "parataxis" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  PRON | he          | VERB | said             | .    | ,           |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  57. head 8 words before the correct head (before the focus word instead ofbefore the focus word), dependency "adpmod" instead of "mark" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       |             |      | until            |      | cash        |   1
+  NOUN | resolutions | ADP  | until            | NOUN | cash        |   1
+       |             |      | until            | NOUN |             |   1
+       |             | ADP  | until            |      |             |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  58. head one word before the correct head (before the focus word), correct dependency : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  ADJ  | remiss      | ADP  | in               | ADV  | not         |   1
+       |             |      |                  |      | not         |   1
+       |             |      |                  | ADV  |             |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  59. correct head (before the focus word), dependency "ccomp" instead of "advcl" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+       |             | VERB | collected        |      |             |   1
+       | have        | VERB |                  |      |             |   1
+  VERB | have        | VERB | collected        | ADP  | on          |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  60. head is the focus word instead of 0, dependency "ccomp" instead of "ROOT" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  VERB |             |      |                  | DET  |             |   1
+  VERB | would       | VERB | prevent          | DET  | the         |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+  61. head 6 words before the correct head (before the focus word instead ofbefore the focus word), dependency "adpmod" instead of "dep" : 1 times
+  -----+-------------+------+------------------+------+-------------+------
+    Before           |    Focus                |   After            | Count
+  CPOS   word        | CPOS   word             | CPOS   word        |
+  -----+-------------+------+------------------+------+-------------+------
+  ADP  |             |      | to               |      | $           |   1
+  ADP  | up          | ADP  |                  |      |             |   1
+       | up          | ADP  |                  |      | $           |   1
+  ADP  |             |      | to               | .    |             |   1
+  ADP  | up          | ADP  | to               | .    | $           |   1
+       | up          | ADP  | to               |      |             |   1
+       |             | ADP  | to               |      | $           |   1
+  ADP  |             | ADP  |                  |      | $           |   1
+       | up          |      | to               | .    |             |   1
+       | up          |      | to               |      | $           |   1
+  ADP  |             | ADP  |                  | .    |             |   1
+       |             | ADP  | to               | .    |             |   1
+       | up          | ADP  |                  | .    |             |   1
+       |             |      | to               | .    | $           |   1
+  ADP  | up          |      | to               |      |             |   1
+  ADP  |             | ADP  | to               |      |             |   1
+       |             | ADP  |                  | .    | $           |   1
+  -----+-------------+------+------------------+------+-------------+------
+
+
+  Local contexts involved in several frequent errors:
+  ===================================================
+
+
+  -----+-------------+------+------------------+------+-------------
+    Before           |    Focus                |   After            
+  CPOS   word        | CPOS   word             | CPOS   word        
+  -----+-------------+------+------------------+------+-------------
+       |             | VERB |                  |      |             
+  -----+-------------+------+------------------+------+-------------
+   1. head two words after the correct head (before the focus word), correct dependency : 3 times
+   6. head 6 words after the correct head (before the focus word), correct dependency : 1 times
+
+  -----+-------------+------+------------------+------+-------------
+    Before           |    Focus                |   After            
+  CPOS   word        | CPOS   word             | CPOS   word        
+  -----+-------------+------+------------------+------+-------------
+       |             |      |                  | DET  |             
+  -----+-------------+------+------------------+------+-------------
+  48. correct head (before the focus word), dependency "xcomp" instead of "infmod" : 1 times
+  19. head is the focus word instead of 0, dependency "conj" instead of "ROOT" : 1 times
+
+  -----+-------------+------+------------------+------+-------------
+    Before           |    Focus                |   After            
+  CPOS   word        | CPOS   word             | CPOS   word        
+  -----+-------------+------+------------------+------+-------------
+       |             |      | ``               |      |             
+  -----+-------------+------+------------------+------+-------------
+  21. head two words before the correct head (after the focus word), correct dependency : 1 times
+  41. head = 0 instead of after the focus word, dependency "ROOT" instead of "p" : 1 times
+
+  -----+-------------+------+------------------+------+-------------
+    Before           |    Focus                |   After            
+  CPOS   word        | CPOS   word             | CPOS   word        
+  -----+-------------+------+------------------+------+-------------
+  NOUN |             |      |                  | VERB |             
+  -----+-------------+------+------------------+------+-------------
+  38. head 5 words before the correct head (before the focus word instead ofbefore the focus word), dependency "conj" instead of "nsubj" : 1 times
+   6. head 6 words after the correct head (before the focus word), correct dependency : 1 times
+
+  -----+-------------+------+------------------+------+-------------
+    Before           |    Focus                |   After            
+  CPOS   word        | CPOS   word             | CPOS   word        
+  -----+-------------+------+------------------+------+-------------
+  DET  | The         | NOUN |                  |      |             
+  -----+-------------+------+------------------+------+-------------
+  37. head = 0 instead of after the focus word, dependency "ROOT" instead of "nsubj" : 1 times
+  16. head two words after the correct head (after the focus word), dependency "nsubj" instead of "compmod" : 1 times
+
+  -----+-------------+------+------------------+------+-------------
+    Before           |    Focus                |   After            
+  CPOS   word        | CPOS   word             | CPOS   word        
+  -----+-------------+------+------------------+------+-------------
+  NOUN |             |      |                  |      |             
+  -----+-------------+------+------------------+------+-------------
+   5. head three words before the correct head (before the focus word), correct dependency : 2 times
+   2. head one word after the correct head (after the focus word), correct dependency : 2 times
+

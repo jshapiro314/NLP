@@ -1,0 +1,694 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"token",
+				"tokenizeInput"
+			],
+			[
+				"engT",
+				"engTokens"
+			],
+			[
+				"frT",
+				"frTrigram"
+			],
+			[
+				"eng",
+				"engBigram"
+			],
+			[
+				"log",
+				"log2"
+			],
+			[
+				"line",
+				"lineTokens"
+			],
+			[
+				"cal",
+				"calculatePerplexity"
+			],
+			[
+				"test",
+				"testData"
+			],
+			[
+				"gerN",
+				"gerN"
+			],
+			[
+				"engN",
+				"engN"
+			],
+			[
+				"inputT",
+				"inputTokens"
+			],
+			[
+				"inpu",
+				"inputTokens"
+			],
+			[
+				"gerT",
+				"gerTokens"
+			],
+			[
+				"gerTex",
+				"gerTextString"
+			],
+			[
+				"outpuT",
+				"outputFile"
+			],
+			[
+				"gerTe",
+				"gerTextString"
+			],
+			[
+				"frTex",
+				"frTextString"
+			],
+			[
+				"engText",
+				"engTextString"
+			],
+			[
+				"engTex",
+				"engTextString"
+			],
+			[
+				"get",
+				"getkeys"
+			],
+			[
+				"item",
+				"itemCount"
+			],
+			[
+				"word",
+				"word"
+			],
+			[
+				"toke",
+				"tokenize_my_text"
+			],
+			[
+				"sample",
+				"sample_text_file"
+			],
+			[
+				"sat",
+				"state_union"
+			],
+			[
+				"stop",
+				"stop_word"
+			],
+			[
+				"sent",
+				"sent_tokenize"
+			],
+			[
+				"word_",
+				"word_tokenize"
+			],
+			[
+				"startin",
+				"startingNum"
+			],
+			[
+				"le",
+				"length-1"
+			],
+			[
+				"temp",
+				"tempVal"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"char",
+				"charAt"
+			],
+			[
+				"InvalidCard",
+				"InvalidCardNumberException"
+			],
+			[
+				"starting",
+				"startingDigits"
+			],
+			[
+				"ret",
+				"retVal"
+			],
+			[
+				"potential",
+				"potentialCardNum"
+			],
+			[
+				"curren",
+				"currentType"
+			],
+			[
+				"list",
+				"listOfCardTypes"
+			],
+			[
+				"start",
+				"startingDigits"
+			],
+			[
+				"potentia",
+				"potentialCardNum"
+			],
+			[
+				"curr",
+				"currentRatio"
+			],
+			[
+				"Curren",
+				"currentRatio"
+			],
+			[
+				"camera",
+				"cameraList"
+			],
+			[
+				"pervious",
+				"previousRatio"
+			],
+			[
+				"current",
+				"currentRatio"
+			],
+			[
+				"previous",
+				"previousRatio"
+			],
+			[
+				"curre",
+				"currentNotCovered"
+			],
+			[
+				"camer",
+				"cameraList"
+			],
+			[
+				"orien",
+				"orientation"
+			],
+			[
+				"has",
+				"hasNext"
+			],
+			[
+				"getx",
+				"getx"
+			],
+			[
+				"Possible",
+				"possibleCost"
+			],
+			[
+				"inde",
+				"index2"
+			],
+			[
+				"salesman",
+				"salesman2"
+			],
+			[
+				"tempVa",
+				"tempVal2"
+			],
+			[
+				"index",
+				"index1"
+			],
+			[
+				"poss",
+				"possibleTour"
+			],
+			[
+				"pos",
+				"points"
+			],
+			[
+				"possi",
+				"possibleCost"
+			],
+			[
+				"Sale",
+				"salesman1"
+			],
+			[
+				"Arr",
+				"ArrayList"
+			],
+			[
+				"rand",
+				"randomVal"
+			],
+			[
+				"length",
+				"length-1"
+			],
+			[
+				"tour",
+				"tour2"
+			],
+			[
+				"sales",
+				"salesman2"
+			],
+			[
+				"nex",
+				"nextInt"
+			],
+			[
+				"possil",
+				"possibleCost"
+			],
+			[
+				"possible",
+				"possibleTour"
+			],
+			[
+				"comput",
+				"computCostRow"
+			],
+			[
+				"calcu",
+				"calculateDistance"
+			],
+			[
+				"point",
+				"pointIndex"
+			],
+			[
+				"remaind",
+				"remainderOfStops"
+			],
+			[
+				"num",
+				"numOfStops"
+			],
+			[
+				"check",
+				"check_find_sym"
+			],
+			[
+				"print",
+				"print_symbol"
+			],
+			[
+				"add",
+				"addToQueue"
+			],
+			[
+				"average",
+				"averageCLOOK"
+			],
+			[
+				"avera",
+				"averageCSCAN"
+			],
+			[
+				"averageS",
+				"averageSCAN"
+			],
+			[
+				"prin",
+				"println"
+			],
+			[
+				"minimum",
+				"minimumIndex"
+			],
+			[
+				"closest",
+				"closestDistance"
+			],
+			[
+				"runS",
+				"runSCAN"
+			],
+			[
+				"re",
+				"retVal"
+			],
+			[
+				"clos",
+				"closestDistance"
+			],
+			[
+				"close",
+				"closestPos"
+			],
+			[
+				"reques",
+				"requestPos"
+			],
+			[
+				"head",
+				"headPos"
+			],
+			[
+				"initi",
+				"initializeScheduling"
+			],
+			[
+				"random",
+				"randomGenerator"
+			],
+			[
+				"gener",
+				"generateRequests"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"package control: li",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 746.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Josh/Desktop/untitled",
+		"/Users/Josh/Library/Mobile Documents/com~apple~CloudDocs/College/Senior/Semester1/NLP/Assignment2/TrigramWordLangId-KBO.out",
+		"/Users/Josh/Library/Mobile Documents/com~apple~CloudDocs/College/Senior/Semester1/NLP/Assignment2/BigramWordLangId-AOTEST.out",
+		"/Users/Josh/Library/Mobile Documents/com~apple~CloudDocs/College/Senior/Semester1/NLP/Assignment2/AOTest.py",
+		"/Users/Josh/Library/Mobile Documents/com~apple~CloudDocs/College/Senior/Semester1/NLP/Assignment2/convertLineEndings.py",
+		"/Users/Josh/Library/Mobile Documents/com~apple~CloudDocs/College/Senior/Semester1/NLP/Assignment2/BigramWordLangId-AO.out",
+		"/Users/Josh/Desktop/inLoopCodeSample/jshapiro314_a1/SelfAdjTree.java",
+		"/Users/Josh/Desktop/inLoopCodeSample/jshapiro314_a1/ValEnumerationAdj.java",
+		"/Users/Josh/Desktop/inLoopCodeSample/jshapiro314_a1/KeyEnumerationAdj.java",
+		"/Users/Josh/Library/Mobile Documents/com~apple~CloudDocs/College/Junior/Semester1/cs3212/jshapiro314_a4/README.txt",
+		"/Users/Josh/Library/Mobile Documents/com~apple~CloudDocs/College/Junior/Semester1/cs3212/jshapiro314_a4/Jshapiro314Algorithm.java",
+		"/Users/Josh/Desktop/jshapiro314_a1/ValEnumerationAdj.java",
+		"/Users/Josh/Desktop/jshapiro314_a1/SelfAdjTree.java",
+		"/Users/Josh/Desktop/jshapiro314_a1/KeyEnumerationAdj.java",
+		"/Users/Josh/Library/Mobile Documents/com~apple~CloudDocs/College/Junior/Semester1/cs3212/jshapiro314_a1/SelfAdjTree.java",
+		"/Users/Josh/Library/Mobile Documents/com~apple~CloudDocs/College/Senior/Semester1/MachineLearning/Homework1/README.txt",
+		"/Users/Josh/Library/Mobile Documents/com~apple~CloudDocs/College/Senior/Semester1/NLP/pythonClass1/Pyhthon_NLP_Tutorial/exercise1.py",
+		"/Users/Josh/Library/Mobile Documents/com~apple~CloudDocs/College/Senior/Semester1/NLP/Assignment1/Question4.py",
+		"/Users/Josh/Library/Mobile Documents/com~apple~CloudDocs/College/Senior/Semester1/NLP/perlClass/helloWorld.pl",
+		"/Users/Josh/Library/Application Support/Sublime Text 3/Packages/Table Editor/README.md",
+		"/Users/Josh/Library/Application Support/Sublime Text 3/Packages/Table Editor/Default (OSX).sublime-keymap",
+		"/Users/Josh/Library/Mobile Documents/com~apple~CloudDocs/College/Junior/Semester1/Operating Systems/Homework1/CircularLinkedList.h",
+		"/Users/Josh/Library/Mobile Documents/com~apple~CloudDocs/College/Junior/Semester1/Operating Systems/Homework1/CircularLinkedList.c",
+		"/Users/Josh/Library/Mobile Documents/com~apple~CloudDocs/College/Senior/Semester1/NLP/pythonClass1/Pyhthon_NLP_Tutorial/Test.py",
+		"/Users/Josh/Library/Mobile Documents/com~apple~CloudDocs/College/Senior/Semester1/NLP/pythonClass1/Pyhthon_NLP_Tutorial/sample_one.txt",
+		"/Users/Josh/Downloads/web/css/style.css",
+		"/Users/Josh/Desktop/InvalidCardNumberException.java",
+		"/Users/Josh/Desktop/CardTypes.java",
+		"/Users/Josh/Desktop/CreditCard.java",
+		"/Users/Josh/Library/Mobile Documents/com~apple~CloudDocs/College/TravelAmp/TravelAmpRepo/README.md",
+		"/Users/Josh/Desktop/SHAPIRO2016951067-MIB.txt",
+		"/Users/Josh/Library/Mobile Documents/com~apple~CloudDocs/College/Junior/Semester2/ComputerGraphics/Homework/Homework1/[2016951067_JoshuaShapiro]/README.txt",
+		"/Users/Josh/Downloads/cubiesrc/Solver.java",
+		"/Users/Josh/Documents/College/Junior/Semester1/cs3212/jshapiro314_a1/BinarySearchTree.java",
+		"/Users/Josh/Documents/College/Junior/Semester1/cs3212/jshapiro314_a1/KeyEnumeration.java",
+		"/Users/Josh/Documents/College/Junior/Semester1/cs3212/cameraJar/CameraPlacementTest.java",
+		"/Users/Josh/Documents/College/Junior/Semester1/cs3212/jshapiro314_a4/README.txt",
+		"/Users/Josh/Documents/College/Junior/Semester1/cs3212/cameraJar/Jshapiro314Algorithm.java",
+		"/Users/Josh/Documents/College/Junior/Semester1/cs3212/cameraJar/greedy.java",
+		"/Users/Josh/Documents/College/Sophomore/1st Semester/Computer Architecture/CSCI2461_Project4_jshapiro314-3/Makefile",
+		"/Users/Josh/Documents/College/Sophomore/1st Semester/Computer Architecture/CSCI2461_Project4_jshapiro314-3/travllist.c",
+		"/Users/Josh/Documents/College/Sophomore/1st Semester/Computer Architecture/CSCI2461_Project4_jshapiro314-3/llistdata.c",
+		"/Users/Josh/Documents/College/Sophomore/1st Semester/Computer Architecture/CSCI2461_Project4_jshapiro314-3/hashtable.c",
+		"/Users/Josh/Documents/College/Junior/Semester1/cs3212/jshapiro314_a2_1/NaiveRectIntersection.java",
+		"/Users/Josh/Documents/College/Junior/Semester1/cs3212/jshapiro314_a3/mtsp.props",
+		"/Users/Josh/Documents/College/Junior/Semester1/cs3212/jshapiro314_a3/Annealing.java",
+		"/Users/Josh/Documents/College/Sophomore/1st Semester/Computer Architecture/Architecture Project 4/CSCI2461_Project4_jshapiro314/hashtable.c",
+		"/Users/Josh/Documents/College/Junior/Semester1/cs3212/jshapiro314_a3/Greedy.java",
+		"/Users/Josh/Documents/College/Junior/Semester1/cs3212/jshapiro314_a3/Naive.java",
+		"/Users/Josh/Documents/College/Junior/Semester1/Foundations/Project2/test.txt",
+		"/Users/Josh/Documents/College/Junior/Semester1/Foundations/Project2/symbol_table.h",
+		"/Users/Josh/Documents/College/Junior/Semester1/Foundations/Project2/scanner(1).l",
+		"/Users/Josh/Documents/College/Junior/Semester1/Foundations/Project2/symbol_table - template.h",
+		"/Users/Josh/Documents/College/Junior/Semester1/Foundations/Project2/parser(1).y",
+		"/Users/Josh/Documents/College/Junior/Semester1/Foundations/Project2/project_2.pdf",
+		"/Users/Josh/Documents/College/Junior/Semester1/Operating Systems/Homework5/DiskScheduling.java"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"monogram",
+			"engTokens",
+			"engTrigram",
+			"engBigram",
+			"engMonogram",
+			"engTextString",
+			"engText",
+			"tokens",
+			"index",
+			"calcPerplexity",
+			"engMonogram",
+			"engBigram",
+			"engTrigram",
+			"engTokens",
+			"engMonogram",
+			"engTrigram",
+			"engMonogram",
+			"engTrigram",
+			"gerModel",
+			"frModel",
+			"engModel",
+			"gerDict",
+			"frDict",
+			"engDict",
+			"log",
+			"engModel",
+			"engDict",
+			"engModel",
+			"engDict",
+			"engProb",
+			"engModel",
+			"engProb",
+			"engModel",
+			"gerTextString",
+			"frTextString",
+			"line",
+			"engDict",
+			"engModel",
+			"engDict",
+			"engModel",
+			"engDict",
+			"engTextString",
+			"engModel",
+			"engDict",
+			"engModel",
+			"engDict",
+			"human rights",
+			"numbers",
+			"tokenize_my_text",
+			"accordian",
+			"69655C",
+			"f7f7f7",
+			"10A7AF",
+			"5C74A7",
+			"System.out.print",
+			"double",
+			"startingDigit",
+			"cardType",
+			"INTEGER(",
+			"INTEGER",
+			"delete",
+			"if ($2",
+			"PointAngle",
+			"sum+=",
+			"extWalls",
+			"Wall",
+			"Integer",
+			"main",
+			"new ArrayList",
+			"List<Integer>",
+			"List<List<Integer>>",
+			"null",
+			"List<List<Integer>>",
+			"set",
+			"String",
+			"      //",
+			"type2",
+			"value",
+			"double",
+			"queue[i]",
+			"requestPos",
+			"int",
+			"();\n",
+			"headPos"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"gerBigram",
+			"frBigram",
+			"engBigram",
+			"gerMonogram",
+			"frMonogram",
+			"Integer32(",
+			"Integer32",
+			"Jshapiro314PointAngle"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "BigramWordLangId-GT.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 360.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
