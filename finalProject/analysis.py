@@ -14,8 +14,11 @@ import classifiers
 ###Import Raw Data##########################
 ############################################
 
+#Create bunch from trainingData
+trainingBunch = sklearn.datasets.load_files("./c50/c50train/",load_content=True,encoding="utf-8",shuffle=False)
 
-
+#Create bunch from testData
+trainingBunch = sklearn.datasets.load_files("./c50/c50test/",load_content=True,encoding="utf-8",shuffle=False)
 
 
 
